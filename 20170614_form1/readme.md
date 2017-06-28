@@ -32,8 +32,8 @@
 
     type    text(default)  文本输入框
             password       密码输入框
-            number         数字输入框
-            email          邮箱输入框
+            number         数字输入框           
+            email          邮箱输入框     max min step
             date           日期输入框
 
             color          取色器
