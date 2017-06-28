@@ -1,0 +1,75 @@
+html,body{
+    /*Emmet*/
+    margin: 0;
+    padding: 0;
+}
+.box{
+    
+    width:800px;
+    height:300px;
+}
+.box *{
+    vertical-align: middle;
+}
+.box span{
+
+}
+p{
+
+    font-family:BiauKai,Microsoft YaHei,Arial;
+    /*字体*/
+
+    font-size:24px;
+    /*文字大小*/
+
+    font-weight:bold;
+    /*b*/
+    /*粗体*/
+    /*400-900*/
+    /*normal < 500 < bold*/
+
+    font-style:italic;
+    /*i*/
+    /*斜体*/
+
+    /*font: italic bold 16px/32px "微软雅黑";*/
+    /*
+        font-style
+        font-weight
+        font-size/line-height
+        font-family
+    */
+
+    font:16px/32px "微软雅黑",Arial;
+
+    color:#f00;
+
+    text-align: center;
+
+    vertical-align: bottom;
+    /*行内元素之间的垂直对齐方式*/
+
+    line-height: 32px;
+    /*行高*/
+
+    text-indent:32px;
+
+
+    text-shadow: 3px 5px 1px #888;
+    /*
+        x-offset
+        y-offset
+        blur
+        color
+    */
+
+
+}
+.some5{
+    height:24px;
+    width:300px;
+
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

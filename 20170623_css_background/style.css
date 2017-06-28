@@ -1,0 +1,50 @@
+/*css initialize*/
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.clear-top::before,.clear-top:before{
+    content:"";
+    display: block;
+    overflow: hidden;
+}
+
+.clear-float::after,.clear-float:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.center-father{
+    position:relative;
+}
+.center-son{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+}
+
+/*style*/
+body{
+    /*background: url('./test1.png');*/
+}
+.father{
+    width: 400px;
+    height: 400px;
+    background: #f00;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+}
+.son{
+    width: 100px;
+    height: 100px;
+    background-color: #0f0;
+    background-image: url(./test1.png);
+    background-position: 50% 50%;    
+    margin-top:60px;
+    margin-left:60px;
+}
