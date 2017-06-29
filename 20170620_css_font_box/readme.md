@@ -60,6 +60,9 @@ p{
 
     vertical-align: bottom;
     /*行内元素之间的垂直对齐方式*/
+    /*top
+    middle
+    bottom*/
 
     line-height: 32px;
     /*行高*/
@@ -120,7 +123,7 @@ margin:30px;
 写法类似padding
 
 # 3. :before 和 :after伪类
-## 3.1. margin-top bug
+## 3.1. margin-top bug  外边距坍塌
 
 * (1) 父容器增加::before选择器，content:" ";display:block;overflow:hidden;
 
