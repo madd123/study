@@ -1,0 +1,183 @@
+/*.grandfather{
+    width: 600px;
+    height: 600PX;
+    background-color: #896088;
+    position:relative;
+}
+.father{
+    width:282px;
+    height:189px;
+    background-image: url(./背景.png);
+    position: absolute;
+     Hello
+    
+}
+.father.son{
+      width:282px;
+      height:189px;
+      position:absolute;
+      margin:auto;
+      top:0;
+      bottom:0;
+      right:0;
+      left:0;
+
+*/
+
+/*/*//*.container{
+
+    width: 400px;
+    height: 360px;
+    background-color : #ff2312;
+    position:relative;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #4ff562;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    overflow: hidden;*/
+    /*/*font: 36px/225px "微软雅黑" , Arial;
+  
+
+}*/
+/*.angle{
+    width:29px;
+    height: 30px;
+    /*background-color: #ffff00;
+    position: absolute;
+    top: 0;
+    right: 0;
+    top: -29px;
+    right: -30px;
+    overflow: hidden;
+
+}   
+.box:hover>.angle{*/
+      /*background: url("./背景2.png") no-repeat;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transition: all 0.55s;
+/*
+/*.font{
+     width: 34px;
+    height: 31px;
+
+    position: absolute;
+    
+      top:-31px;
+      
+      /*right:-34px;
+    background: url(./背景2.png);
+    background-position:  -45px -6px;
+    transation: 0.55s;
+}*/
+/*.box:hover.font{
+    top: o;
+    right: o;*/
+
+
+/*.container{
+
+    width: 400px;
+    height: 360px;
+   background-color: #656565;
+    position:relative;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: #4ff534;
+    /*background: url("./背景2.png");*/
+    /*position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    overflow: hidden;
+    font: 36px/225px "微软雅黑" , Arial;
+  
+
+}
+.angle{
+    width:0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    background: url("./tupian.jpg") no-repeat;
+    background-position: center;
+    transition: all 0.55s;
+
+}   
+.box:hover>.angle{
+    width:20px;
+    height:20px;*/
+         
+   
+.container{
+    width:1000px;
+    height:200px;
+    background-color: #ffffff;
+    position: absolute;
+
+
+}
+.box1{
+    width :735px;
+    height:78px;
+    background-image: url("./tubiao2.png");
+    position: absolute;
+ 
+    right:-9px;
+    margin: auto;
+
+}
+.box1:hover{
+    background-image: url("./tubiao.png");
+}
+
+.box2{
+   width:381px;
+   height: 78px;
+   position: absolute;
+   top: o;
+   margin: auto;
+   
+   background-image:url("./images/logo_02.png");
+}
+.search{
+    width: 200px;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    right: -213px;
+
+}
+.box3{
+
+  position:absolute;
+  right: -180px;
+  bottom: 142px;
+}
+
+     
+     
+
+.box3 input{
+    background: url("./logo2_05.png") no-repeat ;
+   background-position:150px;
+  
+
+}  
+

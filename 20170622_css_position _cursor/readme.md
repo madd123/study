@@ -100,7 +100,8 @@ body::before,body::after,body:before,body:after{
     background-color: #f00;  
 }
 ```
-
+4.cursor
+  定义图标点击之后出现的效果，如pointer指代小箭头。
 
 # 作业
 1. 熟练掌握三种position，以及三种居中方法，将第三种居中方法整理成一种通用的初始化css
