@@ -1,5 +1,10 @@
 # float
 float 浮动
+一旦元素浮动，就不会占据默认的margin区域，比如div;
+浮动元素后方，不要跟随非浮动元素；
+浮动元素相互之间，才能产生排版影响；
+浮动元素，无法正常的撑开父容器；
+
 float left 从左到右排列，类似inline-block
 float right 从右到左，区别于inline-block，元素顺序会变化
 

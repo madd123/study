@@ -124,8 +124,10 @@
     width:20px;
     height:20px;*/
          
-   
-.container{
+
+
+/*排版tengxundaxue */
+/*.container{
     width:1000px;
     height:200px;
     background-color: #ffffff;
@@ -133,51 +135,206 @@
 
 
 }
-.box1{
-    width :735px;
-    height:78px;
-    background-image: url("./tubiao2.png");
-    position: absolute;
- 
-    right:-9px;
-    margin: auto;
-
-}
-.box1:hover{
-    background-image: url("./tubiao.png");
-}
-
-.box2{
+.logo1{
    width:381px;
    height: 78px;
    position: absolute;
-   top: o;
+   top: 0px;
    margin: auto;
-   
-   background-image:url("./images/logo_02.png");
+   left: 0px;
+   background-image:url("./tentupian.png");
 }
+.slogo1{
+    width :100px;
+    height:78px;
+    background-image: url("./tulogo1.png");
+    position: absolute;
+    top: 0;
+    left:346px;
+    margin: auto;
+}
+.slogo1:hover{
+    background-image: url("./tulogo.png");
+    width: 100px;
+    height: 78px;
+}
+.slogo2{
+     width :100px;
+    height:78px;
+    background-image: url("./2tulogo.png");
+    position: absolute;
+    top: 0;
+    left:425px;
+    margin: auto;
+}
+.slogo2:hover{
+     background-image: url("./tulogo2.png");
+    width: 100px;
+    height: 78px;
+}
+.slogo3{
+     width :100px;
+    height:78px;
+    background-image: url("./3tulogo.png");
+    position: absolute;
+    top: 0;
+    left:525px;
+    margin: auto;
+}
+.slogo3:hover{
+     background-image: url("./tulogo3.png");
+    width: 100px;
+    height: 78px;
+}
+.slogo4{
+     width :100px;
+    height:78px;
+    background-image: url("./4tulogo.png");
+    position: absolute;
+    top: 0;
+    left:635px;
+    margin: auto;
+}
+.slogo4:hover{
+     background-image: url("./tulogo4.png");
+    width: 100px;
+    height: 78px;
+}*/
+
+
+ /*.container{
+    width:1000px;
+    height:200px;
+    background-color: #ffffff;
+    position: absolute;
+}
+.logo1{
+   width:381px;
+   height: 78px;
+   position: absolute;
+   top: 0px;
+   margin: auto;
+   left: 0px;
+   background-image:url("./tentupian.png");
+}*/
+
+/*.logo{
+  
+    
+    background-image: url("./tubiao2.png");
+     
+}
+
+
+.logo1{
+   width: 75px;
+    height: 78px;
+    /*position: absolute;*/
+    /*top: 0;
+    margin: auto;
+    /*left: 20px;*/
+    /*background-image: url(./tubiao.png);
+    background-position: -18PX;
+    
+}
+.logo2{
+     width: 75px;
+    height: 78px;
+    /*position: absolute;*/
+    /*top: 0;
+    margin: auto;
+    /*left: 120px;
+ 
+    background-position: -125PX;
+    
+}
+.logo2:hover{
+     width: 75px;
+    height: 78px;
+    /*position: absolute;*/
+    /*top: 0;
+    margin: auto;
+    /*left: 120px;
+    background-image: url(./tubiao.png);
+    background-position: -125PX;
+  
+}
+
+
+
+
+
+
 .search{
     width: 200px;
     height: 78px;
     position: absolute;
     top: 0;
-    right: -213px;
+    right: -261px;
 
 }
-.box3{
+.box{
 
-  position:absolute;
-  right: -180px;
-  bottom: 142px;
+    position:absolute;
+    right: -228px;
+    bottom: 140px;
 }
+    
 
-     
-     
-
-.box3 input{
+.box input{
     background: url("./logo2_05.png") no-repeat ;
    background-position:150px;
   
 
-}  
+} 
+.nvren{
+    width:1330px;
+    height:330px;
+    background-image: url("./meinv.png");
+    position: absolute;
+    bottom: 350px;
+    left: 0;
+
+} 
+
+.text{
+    width:500px;
+    height:300px;
+    position: absolute;
+    bottom: 15px;
+    left: 55px;
+
+    
+}
+
+.tubiao{
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    bottom: 270px;
+
+
+
+}*/
+html,body{
+    margin: 0;
+    padding: 0;
+    <element class="clear-float"::after>
+}
+.clear-float::after,.clear-float::after{
+    content:"";
+    display: block;
+    clear: both;
+
+}
+.logo{
+     background-image: url("./tubiao2.png");
+     height: 78px;
+     width: 750px;
+}
+.logo:hover{
+     background-image: url("./tubiao.png");
+}
+ 
+
 
