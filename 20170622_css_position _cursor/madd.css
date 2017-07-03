@@ -315,8 +315,8 @@
 
 
 
-}*/
-html,body{
+*/
+/*html,body{
     margin: 0;
     padding: 0;
     <element class="clear-float"::after>
@@ -334,7 +334,232 @@ html,body{
 }
 .logo:hover{
      background-image: url("./tubiao.png");
+}*/
+/*html,body{
+    margin: 0;
+    padding: 0;
 }
- 
+.table{
+    width: 400px;
+    height:400px;
+    background-color: red;
+    overflow: hidden;
+}
+
+.table>div,.table>div>div{
+   width: 25%;
+     height: 25%;
+     margin: 12.5%;
+     background: #a2d700;
+     float:left;
+     position: relative;
+     top:0;
+     left:0;
+    
+ }
+ .table>div>div{
+     background:purple;
+ }
+ .table:hover *{
+      transition:all 3s;
+ }
+
+.table:hover>.angle1,.table:hover .mixangle1{
+   left:50%;
+}
+.table:hover>.angle2,.table:hover .mixangle2{
+    top:50%;
+  
+}
+.table:hover>.angle3,.table:hover .mixangle3{
+    top:-50%;
+   
+}
+.table:hover>.angle4,.table:hover .mixangle4{
+   left:-50%
+}*/
+/*.c{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    float: left;
+    left: 0;
+    transition:all 3s;
+  
+
+}
+
+.c>.c{
+    background-color: green;
+
+}
+.c>.c>.c{
+    background-color: yellow;
+}
+.c>.c>.c>.c{
+    background-color: pink;
+}
+.c>.c>.c>.c>.c{
+    background-color: black;
+}
+.c>.c>.c>.c>.c>.c{
+    background-color: purple;
+}
+.c>.c>.c>.c>.c>.c>.c{
+    background-color: orange;
+}
+.c *:hover{
+    left: 100px;
+   
+}*/
+/*weiwancheng
+.container{
+    width: 400px;
+    height: 400px;
+    background-color: RED;
+    position: relative;
+    float: left;
+    left: 0;
+    transition:all 3s;
+}
+.container div{
+    background-color: green;
+    width: 50px;
+    height: 50px;
+
+}*/
+/*.tab_container{
+    width: 400px;
+    height: 200px;
+    background-color: gray;
+    position: relative;
+    float: left;
+   
+
+}
+.tab.tab1{
+    width: 200px;
+    height: 50px;
+    background-color: red;
+     float: left;
+
+    
+    
+}
+.tab.tab2{
+    width: 200px;
+    height: 50px;
+    background-color:yellow;
+     float: left;
+
+    
+    
+}
+
+.content.content1{
+    width: 400px;
+    height: 150px;
+    background-color: red;
+     float: left;
+    
+   
+
+}
+.content.content2{
+    width: 400px;
+    height: 150px;
+    background-color:yellow;
+     float: left;
+    
+   
+
+}
+.tab.tab1{
+     position:absolute ;
+    left: 0;
+    top:0;
+}
+.tab.tab2{
+     position: absolute;
+    top:0;
+    left: 200px;
+}
+.content.content1{
+      position:absolute;
+      bottom: 0;
+    left:0;
+    z-index: 2;
+}
+.content.content2{
+      position:absolute ;
+   bottom:0;
+   right: 0;
+   z-index: 2;
+   
+}
+.tab.tab1:hover+.content,.content.content1:hover{
+  
+    z-index: 10;
 
 
+}
+
+.tab.tab2:hover+.content,.content.content2:hover{
+
+     z-index: 10;*/
+/*html,body{
+    margin: 0;
+    padding: 0;
+}
+.clear-float::after,.clear-float:after{
+    content:"";
+    clear: both;
+    display: block;
+
+}
+.tab_container{
+    width: 400px;
+    height: 400px;
+    /*float: left;*/
+    /*position: relative;
+}
+.tab_container>div{
+ float: left;
+}
+.tab{
+    width: 100px;
+    height: 50px;
+}
+.box1>.tab,.box1>.content{
+    background-color: green;
+   
+}
+.box2>.tab,.box2>.content
+{
+   
+    background-color: yellow;
+  
+}
+.box3>.tab,.box3>.content{
+   
+    background-color: pink;
+  
+}
+.box4>.tab,.box4>.content{
+  
+    background-color:blue;
+  
+}
+.content{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 400px;
+    height: 200px;
+    z-index: 0;
+    
+}
+.tab_container>div:hover .content{
+     z-index:10;
+*/
