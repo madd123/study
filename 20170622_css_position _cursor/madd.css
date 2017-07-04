@@ -563,3 +563,206 @@
 .tab_container>div:hover .content{
      z-index:10;
 */
+
+/*.container{
+    width: 1600px;
+    height: 600px;
+    background-color: white;
+    /*float: left;*/
+    /*position: relative;
+  
+}*/
+
+/*携程
+/*.container>div{
+    width: 80px;
+    height: 40px;
+   background-color: blue;
+    float: left;
+
+    font:16px/32px "微软雅黑",Arial;
+   
+
+    color:white;
+
+    text-align: center;
+
+    vertical-align: bottom;
+    
+
+}
+.container>img{
+    width: 1600px;
+    height: 65px;
+    float: left;
+}
+.container>.blank>img{
+     width: 1600px;
+    height: 65px;
+    float: left;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100px;
+    
+}
+.container>.box1{
+    background-color: red;
+}
+
+.container>div>.tab{
+    float: left;
+}
+.tab{
+    width: 100px;
+    height: 100px;
+ 
+
+}
+ 
+.box2>.content{
+     position: absolute;
+     left: 0;
+     top: 100px;
+     width: 1600px;
+     height: 65px;
+     z-index: 1;
+      display: none;
+      color: orangered;
+      text-align: center;
+
+    vertical-align: bottom;
+     
+}
+.box3>.content{
+     position: absolute;
+     left: 0;
+     top: 100px;
+     width: 1600px;
+     height: 65px;
+     z-index: 1;
+     display: none;
+     color: orangered;
+     text-align: center;
+
+    vertical-align: bottom;
+    
+     
+}
+.box2:hover>.content{
+    z-index: 100;
+      display: block;
+      background-color: white;
+
+   
+}
+
+
+
+.box3:hover>.content{
+    z-index: 100;
+      display: block;
+       background-color: white;
+      
+   
+}
+.angle1{
+   width: 0;
+    border: solid;
+    position: absolute;
+   left: 155px;
+    top: 80px;
+    border-width: 5px 5px 10px 5px;
+    border-color: white blue blue blue;
+
+    
+}
+.angle2{
+   width: 0;
+    border: solid;
+    position: absolute;
+    left: 235px;
+    top: 80px;
+    border-width: 5px 5px 10px 5px;
+    border-color: white blue blue blue;
+
+    
+}
+.angle3{
+ width: 0;
+    border: solid;
+    position: absolute;
+      left: 120px;
+      
+    top: 100px;
+    border-width: 5px 5px 5px 5px;
+    border-color: white white orangered white;
+
+}*/
+/*三角*/
+
+
+.yu{
+    width: 581px;
+    height: 300px;
+  
+    position: relative;
+
+}
+.zuo{
+    width: 90px;
+    height: 300px;
+}
+.you{
+    width: 491px;
+    height: 300px;
+}
+.shang{
+    width: 491px;
+    height: 42px;
+      float: left;
+      position: absolute;
+      top: 0;
+      left: 90px;
+}
+.xia{
+    width: 491px;
+    height: 258px;
+}
+
+.zuo>div{
+    width: 90px;
+   height: 42px;
+   background: #2577e3;
+    font:16px/32px "微软雅黑",Arial; 
+    color:#666666;
+    text-align: center;
+    vertical-align: bottom;
+}
+.tab{
+    width: 50px;
+    height: 42px;
+}
+.content{
+    width:491px;
+    height:300px;
+}
+.shang>div{
+    width: 98px;
+    height: 42px;
+    font:16px/32px "微软雅黑",Arial; 
+    color:#666666;
+    text-align: center;
+    
+    float: left;
+  
+   
+}
+.tab{
+    width: 50px;
+    height: 42px;
+}
+.content{
+    width:491px;
+    height:300px;
+}
