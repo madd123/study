@@ -1,579 +1,16 @@
-/*.grandfather{
-    width: 600px;
-    height: 600PX;
-    background-color: #896088;
-    position:relative;
-}
-.father{
-    width:282px;
-    height:189px;
-    background-image: url(./背景.png);
-    position: absolute;
-     Hello
-    
-}
-.father.son{
-      width:282px;
-      height:189px;
-      position:absolute;
-      margin:auto;
-      top:0;
-      bottom:0;
-      right:0;
-      left:0;
 
-*/
-
-/*/*//*.container{
-
-    width: 400px;
-    height: 360px;
-    background-color : #ff2312;
-    position:relative;
-}
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: #4ff562;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    overflow: hidden;*/
-    /*/*font: 36px/225px "微软雅黑" , Arial;
-  
-
-}*/
-/*.angle{
-    width:29px;
-    height: 30px;
-    /*background-color: #ffff00;
-    position: absolute;
-    top: 0;
-    right: 0;
-    top: -29px;
-    right: -30px;
-    overflow: hidden;
-
-}   
-.box:hover>.angle{*/
-      /*background: url("./背景2.png") no-repeat;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transition: all 0.55s;
-/*
-/*.font{
-     width: 34px;
-    height: 31px;
-
-    position: absolute;
-    
-      top:-31px;
-      
-      /*right:-34px;
-    background: url(./背景2.png);
-    background-position:  -45px -6px;
-    transation: 0.55s;
-}*/
-/*.box:hover.font{
-    top: o;
-    right: o;*/
-
-
-/*.container{
-
-    width: 400px;
-    height: 360px;
-   background-color: #656565;
-    position:relative;
-}
-.box{
-    width: 200px;
-    height: 200px;
-    background-color: #4ff534;
-    /*background: url("./背景2.png");*/
-    /*position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    text-align: center;
-    overflow: hidden;
-    font: 36px/225px "微软雅黑" , Arial;
-  
-
-}
-.angle{
-    width:0;
-    height: 0;
-    position: absolute;
-    top: 0;
-    right: 0;
-    overflow: hidden;
-    background: url("./tupian.jpg") no-repeat;
-    background-position: center;
-    transition: all 0.55s;
-
-}   
-.box:hover>.angle{
-    width:20px;
-    height:20px;*/
-         
-
-
-/*排版tengxundaxue */
-/*.container{
-    width:1000px;
-    height:200px;
-    background-color: #ffffff;
-    position: absolute;
-
-
-}
-.logo1{
-   width:381px;
-   height: 78px;
-   position: absolute;
-   top: 0px;
-   margin: auto;
-   left: 0px;
-   background-image:url("./tentupian.png");
-}
-.slogo1{
-    width :100px;
-    height:78px;
-    background-image: url("./tulogo1.png");
-    position: absolute;
-    top: 0;
-    left:346px;
-    margin: auto;
-}
-.slogo1:hover{
-    background-image: url("./tulogo.png");
-    width: 100px;
-    height: 78px;
-}
-.slogo2{
-     width :100px;
-    height:78px;
-    background-image: url("./2tulogo.png");
-    position: absolute;
-    top: 0;
-    left:425px;
-    margin: auto;
-}
-.slogo2:hover{
-     background-image: url("./tulogo2.png");
-    width: 100px;
-    height: 78px;
-}
-.slogo3{
-     width :100px;
-    height:78px;
-    background-image: url("./3tulogo.png");
-    position: absolute;
-    top: 0;
-    left:525px;
-    margin: auto;
-}
-.slogo3:hover{
-     background-image: url("./tulogo3.png");
-    width: 100px;
-    height: 78px;
-}
-.slogo4{
-     width :100px;
-    height:78px;
-    background-image: url("./4tulogo.png");
-    position: absolute;
-    top: 0;
-    left:635px;
-    margin: auto;
-}
-.slogo4:hover{
-     background-image: url("./tulogo4.png");
-    width: 100px;
-    height: 78px;
-}*/
-
-
- /*.container{
-    width:1000px;
-    height:200px;
-    background-color: #ffffff;
-    position: absolute;
-}
-.logo1{
-   width:381px;
-   height: 78px;
-   position: absolute;
-   top: 0px;
-   margin: auto;
-   left: 0px;
-   background-image:url("./tentupian.png");
-}*/
-
-/*.logo{
-  
-    
-    background-image: url("./tubiao2.png");
-     
-}
-
-
-.logo1{
-   width: 75px;
-    height: 78px;
-    /*position: absolute;*/
-    /*top: 0;
-    margin: auto;
-    /*left: 20px;*/
-    /*background-image: url(./tubiao.png);
-    background-position: -18PX;
-    
-}
-.logo2{
-     width: 75px;
-    height: 78px;
-    /*position: absolute;*/
-    /*top: 0;
-    margin: auto;
-    /*left: 120px;
- 
-    background-position: -125PX;
-    
-}
-.logo2:hover{
-     width: 75px;
-    height: 78px;
-    /*position: absolute;*/
-    /*top: 0;
-    margin: auto;
-    /*left: 120px;
-    background-image: url(./tubiao.png);
-    background-position: -125PX;
-  
-}
-
-
-
-
-
-
-.search{
-    width: 200px;
-    height: 78px;
-    position: absolute;
-    top: 0;
-    right: -261px;
-
-}
-.box{
-
-    position:absolute;
-    right: -228px;
-    bottom: 140px;
-}
-    
-
-.box input{
-    background: url("./logo2_05.png") no-repeat ;
-   background-position:150px;
-  
-
-} 
-.nvren{
-    width:1330px;
-    height:330px;
-    background-image: url("./meinv.png");
-    position: absolute;
-    bottom: 350px;
-    left: 0;
-
-} 
-
-.text{
-    width:500px;
-    height:300px;
-    position: absolute;
-    bottom: 15px;
-    left: 55px;
-
-    
-}
-
-.tubiao{
-    width: 500px;
-    height: 50px;
-    position: absolute;
-    bottom: 270px;
-
-
-
-*/
-/*html,body{
+html,body{
     margin: 0;
     padding: 0;
-    <element class="clear-float"::after>
+    
 }
+
 .clear-float::after,.clear-float::after{
     content:"";
     display: block;
     clear: both;
-
-}
-.logo{
-     background-image: url("./tubiao2.png");
-     height: 78px;
-     width: 750px;
-}
-.logo:hover{
-     background-image: url("./tubiao.png");
-}*/
-/*html,body{
-    margin: 0;
-    padding: 0;
-}
-.table{
-    width: 400px;
-    height:400px;
-    background-color: red;
-    overflow: hidden;
 }
 
-.table>div,.table>div>div{
-   width: 25%;
-     height: 25%;
-     margin: 12.5%;
-     background: #a2d700;
-     float:left;
-     position: relative;
-     top:0;
-     left:0;
-    
- }
- .table>div>div{
-     background:purple;
- }
- .table:hover *{
-      transition:all 3s;
- }
-
-.table:hover>.angle1,.table:hover .mixangle1{
-   left:50%;
-}
-.table:hover>.angle2,.table:hover .mixangle2{
-    top:50%;
-  
-}
-.table:hover>.angle3,.table:hover .mixangle3{
-    top:-50%;
-   
-}
-.table:hover>.angle4,.table:hover .mixangle4{
-   left:-50%
-}*/
-/*.c{
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    float: left;
-    left: 0;
-    transition:all 3s;
-  
-
-}
-
-.c>.c{
-    background-color: green;
-
-}
-.c>.c>.c{
-    background-color: yellow;
-}
-.c>.c>.c>.c{
-    background-color: pink;
-}
-.c>.c>.c>.c>.c{
-    background-color: black;
-}
-.c>.c>.c>.c>.c>.c{
-    background-color: purple;
-}
-.c>.c>.c>.c>.c>.c>.c{
-    background-color: orange;
-}
-.c *:hover{
-    left: 100px;
-   
-}*/
-/*weiwancheng
-.container{
-    width: 400px;
-    height: 400px;
-    background-color: RED;
-    position: relative;
-    float: left;
-    left: 0;
-    transition:all 3s;
-}
-.container div{
-    background-color: green;
-    width: 50px;
-    height: 50px;
-
-}*/
-/*.tab_container{
-    width: 400px;
-    height: 200px;
-    background-color: gray;
-    position: relative;
-    float: left;
-   
-
-}
-.tab.tab1{
-    width: 200px;
-    height: 50px;
-    background-color: red;
-     float: left;
-
-    
-    
-}
-.tab.tab2{
-    width: 200px;
-    height: 50px;
-    background-color:yellow;
-     float: left;
-
-    
-    
-}
-
-.content.content1{
-    width: 400px;
-    height: 150px;
-    background-color: red;
-     float: left;
-    
-   
-
-}
-.content.content2{
-    width: 400px;
-    height: 150px;
-    background-color:yellow;
-     float: left;
-    
-   
-
-}
-.tab.tab1{
-     position:absolute ;
-    left: 0;
-    top:0;
-}
-.tab.tab2{
-     position: absolute;
-    top:0;
-    left: 200px;
-}
-.content.content1{
-      position:absolute;
-      bottom: 0;
-    left:0;
-    z-index: 2;
-}
-.content.content2{
-      position:absolute ;
-   bottom:0;
-   right: 0;
-   z-index: 2;
-   
-}
-.tab.tab1:hover+.content,.content.content1:hover{
-  
-    z-index: 10;
-
-
-}
-
-.tab.tab2:hover+.content,.content.content2:hover{
-
-     z-index: 10;*/
-/*html,body{
-    margin: 0;
-    padding: 0;
-}
-.clear-float::after,.clear-float:after{
-    content:"";
-    clear: both;
-    display: block;
-
-}
-.tab_container{
-    width: 400px;
-    height: 400px;
-    /*float: left;*/
-    /*position: relative;
-}
-.tab_container>div{
- float: left;
-}
-.tab{
-    width: 100px;
-    height: 50px;
-}
-.box1>.tab,.box1>.content{
-    background-color: green;
-   
-}
-.box2>.tab,.box2>.content
-{
-   
-    background-color: yellow;
-  
-}
-.box3>.tab,.box3>.content{
-   
-    background-color: pink;
-  
-}
-.box4>.tab,.box4>.content{
-  
-    background-color:blue;
-  
-}
-.content{
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 400px;
-    height: 200px;
-    z-index: 0;
-    
-}
-.tab_container>div:hover .content{
-     z-index:10;
-*/
-
-/*.container{
-    width: 1600px;
-    height: 600px;
-    background-color: white;
-    /*float: left;*/
-    /*position: relative;
-  
-}*/
-
-/*携程
 /*.container>div{
     width: 80px;
     height: 40px;
@@ -625,10 +62,10 @@
      left: 0;
      top: 100px;
      width: 1600px;
-     height: 65px;
+     height: 20px;
      z-index: 1;
       display: none;
-      color: orangered;
+      color: white;
       text-align: center;
 
     vertical-align: bottom;
@@ -639,10 +76,10 @@
      left: 0;
      top: 100px;
      width: 1600px;
-     height: 65px;
+     height: 20px;
      z-index: 1;
      display: none;
-     color: orangered;
+     color: white;
      text-align: center;
 
     vertical-align: bottom;
@@ -652,7 +89,7 @@
 .box2:hover>.content{
     z-index: 100;
       display: block;
-      background-color: white;
+      color: red;
 
    
 }
@@ -662,7 +99,7 @@
 .box3:hover>.content{
     z-index: 100;
       display: block;
-       background-color: white;
+       color: black;
       
    
 }
@@ -698,32 +135,44 @@
     border-width: 5px 5px 5px 5px;
     border-color: white white orangered white;
 
-}*/
-/*三角*/
+}
 
 
-.yu{
+
+
+
+
+
+ .yu{
     width: 581px;
     height: 300px;
   
-    position: relative;
+    position: absolute;
+    left: 0;
+    top: 0;
 
 }
 .zuo{
     width: 90px;
     height: 300px;
+    position: absolute;
+    left: 0;
+    top: 150px;
 }
 .you{
     width: 491px;
     height: 300px;
+    position: absolute;
+    left: 90px;
+    top: 150px;
 }
 .shang{
     width: 491px;
     height: 42px;
       float: left;
       position: absolute;
-      top: 0;
-      left: 90px;
+      top: 5px;
+      left: 0px;;
 }
 .xia{
     width: 491px;
@@ -738,31 +187,79 @@
     color:#666666;
     text-align: center;
     vertical-align: bottom;
+   
 }
-.tab{
-    width: 50px;
+.box_+.box_>.tab{
+     border-top: 1px dashed #000;
+}
+.zuo>div:hover{
+    background: white;
+}
+.yu>div .tab{
+    width: 80px;
     height: 42px;
 }
-.content{
+span{
+    display: inline-block;
+    width: 60px;
+    color: #666666;
+    
+}
+.zuo>div .content{
     width:491px;
     height:300px;
+    position: absolute;
+    left: 90px;
+    height: 200px;
+   
+}
+.shang>div .content{
+    width:491px;
+    height:300px;
+    position: absolute;
+    left: 90px;
+    height: 200px;
+   
+}
+.shang>div:hover{
+    background: #2577e3;
 }
 .shang>div{
     width: 98px;
     height: 42px;
-    font:16px/32px "微软雅黑",Arial; 
+    font:12px/32px "微软雅黑",Arial; 
     color:#666666;
     text-align: center;
-    
     float: left;
+    margin-left: 20px;
+    margin-bottom: 0;
+    background: red;
+    
   
    
 }
-.tab{
-    width: 50px;
-    height: 42px;
+
+xiecheng*/
+
+
+.picture{
+    width: 1000px;
+    height: 220px;
+    position: absolute;
+
 }
-.content{
-    width:491px;
-    height:300px;
+.tupian{
+    background-image: url("")
+}
+
+
+.clear-float::after,.clear-float:after{
+    display: block;
+    content: "";
+    clear: both;
+}
+.clear-top::before,.clear-top:before{
+    content:"" ;
+    display: block;
+    overflow: hidden;
 }
