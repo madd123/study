@@ -13,8 +13,9 @@ html,body{
 clear-top::before,clear-top:before{
     content: "";
     display: block;
-    overflow: hidden
+    overflow: hidden;
 }
+
 .top{
     height: 200px;
     position: relative;
@@ -45,7 +46,7 @@ input{
 
 }
 .middle{
-        width: 1200px;
+    width: 1200px;
     height: 65px;
     position: absolute;
     float: left;
@@ -53,15 +54,17 @@ input{
     background: blue;
 }
 
-.tap{
+.box_>.tap{
      width: 100px;
     height: 65px;
     background: blue;
     float: left;
     
 }
-
-.tap:hover{
+.box_.box1>.tap{
+     background: darkblue;
+}
+.box_>.tap:hover{
     background: darkblue;  
 }
 
@@ -70,9 +73,8 @@ input{
     
     float: left;
 }
-.tab>span{
-    font:  italic normal 16px/32px  "Arial";
-    
+.box_>.tab>span{
+    font:  italic normal 16px/32px  "Arial";    
     width: 60px;
     height: 65px;   
     display: inline-block;
@@ -93,7 +95,7 @@ input{
 }
 .angle_.angle1{
     border-width: 5px 5px 5px 5px;
-    border-color: blue blue blue blue;
+    border-color: darkblue darkblue darkblue darkblue;
     position: relative;
     border-style: solid;
     width: 0px;
@@ -101,95 +103,122 @@ input{
     left: 55px;
     top: 30px;
 }
-.content{
-    width: 1220px;
-    height: 65px;
-    
-    position: absolute;
-    top: 75px;
-    left: 0;   
-}
-.content>div{
-   width: 400px;
-    position: absolute;
+.box_>.content>.jiao1{
+    border-width: 10px 10px 10px 10px;
+    border-color: darkblue darkblue white darkblue;
+    position: relative;
+    border-style: solid;
+    width: 0px;
+    height: 0px;
     left: 40px;
+    top: -20px;
+
+}
+
+.box_>.content>.jiao2{
+    border-width: 10px 10px 10px 10px;
+    border-color: darkblue darkblue white darkblue;
+    position: relative;
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    left: 120px;
+    top: -20px;
+
+}
+.box_>.content{
+    width: 1220px;
+    height: 65px;   
+    position: absolute;
+    top: 65px;
+    left: 120px;
+    
+    display: block;   
+}
+.box_>.content>div{
+   width: 1200px;
+    position: absolute;
+    left: 17px;
     top: 10px;
     display: none;
-}
-
-
-.box1>.content{
-    background:url("./wifilogo.png") no-repeat ;
-    display: block;
-    
-}
-.box1>.content{
-    z-index: 1;
-}
-.content>span{
-    width: 1220px;
-    height: 65px;
-    display: inline-block;
-
-
-}
-.box2 .tap:hover+.content>div{
-    z-index: 5;
-    display: block;
-
+    background: white;
+    border: 1px solid blue;
+    border-top-color: white;
    
 }
-.box1>.tap:hover+.content{
-    display: none;
+
+
+.box1>.content{
+    background:url("./wifilogo.png") no-repeat ;   
+    
 }
 
+
+.box_ .tap:hover+.content>div{
+    display: block;
+  z-index: 5;
+}
+
+/*上面排版*/
 
 
 
 
 .table{
-    width: 500px;
+    width: 1200px;
     position: relative;
-    top: 160px;
+    top:-26px;
+    
 }
-.tab{
+.sum_ .tab{
     width: 90px;
     height: 42px;
-    background: #2577e3;
-       
+    background-color: #2577e3;      
     border-left: 3px solid  #2577e3;
-    text-align: center;
-   
+    text-align: center;  
+    z-index: 2;
 }
 .sum7>.tab{
     border-bottom: 0;
 }
 .table>div:hover .content{
     z-index: 100;
-
+    display: block;
 }
-.table .tab:hover{
+.sum_ .tab:hover{
     background: white;
     border-left-color: #ff9915;
 }
 
-.table>.content{
+.table>.sum_>.content{
     position: absolute;
     left: 90px;
-    top: 0px;
-    z-index: 0;
+    top: 42px;
+    z-index: 2;
     width: 491px;
     height: 258px;
-    background: green;
+    display: none;
+   
     
 }
-.table span{
+.table>.win_>.content{
+    position: absolute;
+    left: 90px;
+    top: 42px;
+    z-index: 2;
+    width: 491px;
+    height: 258px;
+    display: none;
+    
+    
+}
+.sum_ span{
     display: inline-block;
-    line-height: 13px;
+    line-height: 42px;
     text-align: center;
     color: blue;
     border-bottom: 1px dashed white; 
-    width: 60px;
+    width: 66px;
     height: 42px;
     left: 0;
     right: 0;
@@ -198,3 +227,63 @@ input{
 .table>.sum1>.tab{
     background: white;
 }
+.table .win_>.tab{   
+    float: left;
+   position: relative;
+  background: white;
+    top: -293px;
+    left: 90px;
+    z-index: 2;
+
+   
+}
+.win_ span{
+    display: inline-block;
+    line-height: 42px;
+    text-align: center;
+    color: black;
+    width: 100px;
+    height: 42px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 14px;
+}
+.win_ .tab:hover>span{
+    color: #2577e3;
+}
+.beijing{
+  background-image: url(./shuaige.png);
+    width: 1161px;
+    height: 676px;
+    position: absolute;
+    left:  93px;
+    top: 1px;
+   
+}
+.win_.win1>.content>input{
+    position: relative;
+    left: 90px;
+    top: -50px;
+}
+.win1>.content>.c1{
+    position: relative;
+    left: 10px;
+    top: 40px;
+}
+.win1>.content>.c2{
+    position: relative;
+    left: 10px;
+    top: 60px;
+}
+.win1>.content>.c3{
+    position: relative;
+    left:10px;
+    top: 80px;
+}
+.win1>.content>.c4{
+    position: relative;
+    left: 10px;
+    top: 100px;
+}
+/*下面排版*/
