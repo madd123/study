@@ -2,37 +2,50 @@ html,body{
     margin: 0;
     padding: 0;
 }
-
-.father{    
+clear-float::after,clear-float:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+.ad{
+    width: 400px;
+    height: 400px;
     position: relative;
-}
+    
 
-.father *{
-   position: absolute;
-     height: 100px;
 }
-
-.zuo{    
-    margin-right: 25px;
+.ad>.son{  
+    float: left;
+}
+.tap{
+    width: 200px;
+    height: 100px;
+   
+}
+.son1>.tap{
+    background: green;
+}
+.son2>.tap{
     background: red;
+}
+.content{
+    width: 400px;
+    height: 300px;
+    position: absolute;
     left: 0;
-   right: 50%;   
+    top: 100px;
+    background: orange;
+    
+   
 }
-
-.zhong{  
-    width: 50px;
-    left: 0;
-    right:0 ;
-    margin:0 auto ;
-    background: green;   
+.son1>.tap:hover+.content{
+    background: green;
+    z-index: 100;
+ 
 }
-
-.you{    
-    margin-left: 25px;
-    background: yellow;
-    right: 0;
-    left: 50%;
-  
+.son2>.tap:hover+.content{
+    background: red;
+    z-index: 100;
+   
 }
-
 
