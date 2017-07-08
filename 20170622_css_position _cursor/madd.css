@@ -33,7 +33,7 @@ input{
     height: 30px;
     position: absolute;
     left: 288px;
-    top: 16px;
+    top: 27px;
 }
 .youlogo{
     background: url(./searchlogo.png);
@@ -47,7 +47,7 @@ input{
 }
 .middle{
     width: 1200px;
-    height: 65px;
+    height: 42px;
     position: absolute;
     float: left;
     top: 70px;
@@ -55,8 +55,8 @@ input{
 }
 
 .box_>.tap{
-     width: 100px;
-    height: 65px;
+     width: 90px;
+    height: 42px;
     background: blue;
     float: left;
     
@@ -69,16 +69,13 @@ input{
 }
 
 
-.box_{
-    
+.box_{    
     float: left;
 }
-.box_>.tab>span{
-    font:  italic normal 16px/32px  "Arial";    
-    width: 60px;
-    height: 65px;   
-    display: inline-block;
-    line-height: 65px;
+.box_>.tap>span{
+    font:  italic normal 16px/32px  "Arial";      
+    display: block;
+    line-height: 42px;
     text-align: center;
     color: white;
 }
@@ -89,8 +86,8 @@ input{
     border-style: solid;
     width: 0px;
     height: 0px;
-    left: 55px;
-    top: 30px;
+       left: 68px;
+    top: 20px;
 
 }
 .angle_.angle1{
@@ -110,8 +107,8 @@ input{
     border-style: solid;
     width: 0px;
     height: 0px;
-    left: 40px;
-    top: -20px;
+        left: -25px;
+    top: -21px;
 
 }
 
@@ -122,15 +119,15 @@ input{
     border-style: solid;
     width: 0px;
     height: 0px;
-    left: 120px;
-    top: -20px;
+        left: 70px;
+    top: -21px;
 
 }
 .box_>.content{
     width: 1220px;
     height: 65px;   
     position: absolute;
-    top: 65px;
+    top: 43px;
     left: 120px;
     
     display: block;   
@@ -138,8 +135,8 @@ input{
 .box_>.content>div{
    width: 1200px;
     position: absolute;
-    left: 17px;
-    top: 10px;
+        left: 0;
+    top: 2px;
     display: none;
     background: white;
     border: 1px solid blue;
@@ -167,7 +164,7 @@ input{
 .table{
     width: 1200px;
     position: relative;
-    top:-26px;
+    top:-48px;
     
 }
 .sum_ .tab{
@@ -258,7 +255,7 @@ input{
     height: 676px;
     position: absolute;
     left:  93px;
-    top: 1px;
+    top: 10px;
    
 }
 .win_.win1>.content>input{
