@@ -1,0 +1,31 @@
+/* init */
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.mtopbug::before{
+    content:" ";
+    display: block;
+    overflow: hidden;
+}
+
+/* style */
+.father{
+    width: 500px;
+    height: 490px;
+    background: #38f;
+}
+
+.father .son{
+    height:50px;
+    width: 50px;
+    background: #ff0;
+    /*padding:10px 20px 30px 40px;*/
+    /*padding:10px 20px;*/
+    margin:20px;
+    
+}
+.father .son:nth-child(2n){
+    border:3px solid #f00;
+}

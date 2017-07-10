@@ -1,0 +1,36 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+.father{    
+    position: relative;
+}
+
+.father *{
+   position: absolute;
+     height: 100px;
+}
+
+.zuo{    
+    margin-right: 25px;
+    background: red;
+    left: 0;
+   right: 50%;   
+}
+
+.zhong{  
+    width: 50px;
+    left: 0;
+    right:0 ;
+    margin:0 auto ;
+    background: green;   
+}
+
+.you{    
+    margin-left: 25px;
+    background: yellow;
+    right: 0;
+    left: 50%;
+  
+}
