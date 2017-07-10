@@ -7,45 +7,307 @@ clear-float::after,clear-float:after{
     display: block;
     clear: both;
 }
-.ad{
+/*.father{
     width: 400px;
     height: 400px;
-    position: relative;
+    background: yellow;
+}
+.son{
+    width: 50px;
+    height: 50px;
+    background: green;
+}
+
+.mon>img[src="./tupian.jpeg"]{
+    border:5px solid red;
+}
+.mon>img[src="./tupian.jpeg"]+*{
+    border: 10px solid pink;
+}
+.father>div[class^="son"]{
+    border:5px solid black;
+}
+.mon>img[src$=".jpeg"]{
+    border: 10px solid orangered;
+} 练习*/
+
+
+/*.father{
+    width: 800px;
+    height: 1200px;
+}
     
 
-}
-.ad>.son{  
+.box{
+    width: 400px;
+    height: 400px;
+    
     float: left;
 }
-.tap{
-    width: 200px;
-    height: 100px;
-   
-}
-.son1>.tap{
-    background: green;
-}
-.son2>.tap{
-    background: red;
+.image{
+    width: 100px;
+    height: 400px;
+   background: url("./qingxin.jpeg") no-repeat;
+  
+    float: left;
+
+ 
+
 }
 .content{
-    width: 400px;
-    height: 300px;
-    position: absolute;
-    left: 0;
-    top: 100px;
-    background: orange;
-    
-   
-}
-.son1>.tap:hover+.content{
+    width: 300px;
+    height: 400px;
     background: green;
-    z-index: 100;
- 
-}
-.son2>.tap:hover+.content{
-    background: red;
-    z-index: 100;
-   
+  
+    float: left;
 }
 
+.father div:nth-child(4n)>.image{
+    width: 100px;
+    height: 400px;
+   background: url("./qingxin.jpeg") no-repeat;
+    
+    float: right;
+
+}
+.father div:nth-child(4n)>.content{
+    width: 300px;
+    height: 400px;
+    background: green;
+   
+    float: right;
+}
+.father div:nth-child(4n+1)>.image{
+    width: 100px;
+    height: 400px;
+   background: url("./qingxin.jpeg") no-repeat;
+    
+    float: right;
+
+}
+.father div:nth-child(4n+1)>.content{
+    width: 300px;
+    height: 400px;
+    background: green;
+  
+   float: right;
+}
+
+nth-child练习*/
+
+
+
+.a1{
+    width: 400px;
+    height: 300px;
+    border-radius: 200px 200px 200px 200px;
+    border: 1px solid black;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    z-index: 1;
+    background: white;
+}
+.yan1{
+    width: 120px;
+    height: 120px;
+    border:1px solid black; 
+    position: fixed;
+    left: 176px;
+    top: 47px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    z-index: 1;
+}
+.yan2{
+    width: 120px;
+    height: 120px;
+    border:1px solid black; 
+      position: fixed;
+    left: 297px;
+    top: 47px;
+    border-radius: 50px 50px 50px 50px;
+    background-color: white;
+    z-index: 1;
+}
+.yanzhu1{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background: black;
+    position: fixed;
+    left:  256px;
+    top: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.yanzhu2{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background: black;
+    position: fixed;
+    left:  315px;
+    top: 100px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.xiaoheng1{
+   width: 100px;
+    height: 50px;
+    border-bottom: 4px solid black;
+    position: fixed;
+    left: 123px;
+    top: 206px;
+    z-index: 1;
+}
+.xiaoheng2{
+        width: 100px;
+    height: 50px;
+    border-bottom: 4px solid black;
+    position: fixed;
+    left: 366px;
+    top: 206px;
+    z-index: 1;
+}
+.xiaozuoxie1{
+   width: 100px;
+    height: 50px;
+    background: url(./xiaoxiexian.png) no-repeat;
+    background-color: white;
+    position: fixed;
+    left: 123px;
+    top: 190px;
+    z-index: 1;
+}
+.xiaozuoxie2{
+        width: 100px;
+    height: 50px;
+    background: url(./xiaozuoxie.png) no-repeat;
+    background-color: white;
+    position: fixed;
+    left: 134px;
+    top: 278px;
+    z-index: 1;
+}
+.xiaoyouxie1{
+     width: 100px;
+    height: 50px;
+    background: url(./xiaoxie2.png) no-repeat;
+    background-color: white;
+    position: fixed;
+    left: 357px;
+    top: 190px;
+    z-index: 1;
+}
+.xiaoyouxie2{
+    width: 100px;
+    height: 50px;
+    background: url(./xiaoyouxie.png) no-repeat;
+    background-color: white;
+    position: fixed;
+    left: 357px;
+    top: 278px;
+    z-index: 1;
+}
+.xiaolian{
+   width: 200px;
+    height: 200px;
+    border-bottom: 2px solid black;
+    background: white;
+    position: fixed;
+    left: 200px;
+    top: 150px;
+    border-radius: 20% 20% 35% 35%;
+    z-index: 1;
+}
+.bizi{
+       width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background: red;
+    position: fixed;
+    left: 271px;
+    top: 149px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.bishu{
+       width: 5px;
+    height: 150px;
+    position: fixed;
+    left: 293px;
+    top: 200px;
+    background: black;
+    z-index: 1;
+}
+.head{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #2577e3;
+    border: 1px solid black;
+    position: fixed;
+    left: 49px;
+    top: -35px;
+}
+.heng{
+    width: 430px;
+    height: 63px;
+    background: orangered;
+    position: fixed;
+    left: 89px;
+    top: 402px;
+    border: 1px solid black;
+    border-radius: 10px 10px 10px 10px;
+    z-index: 1;
+}
+.lingdang{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: fixed;
+    left: 248px;
+    top: 408px;
+    border: 2px solid black;
+    border-radius: 50%;
+    z-index: 1;
+}
+.xian1{
+    width: 90px;
+    height: 2px;
+    position: fixed;
+    left: 254px;
+    top: 436px;
+    background: black;
+    z-index: 1;
+}
+.xian2{
+        width: 99px;
+    height: 3px;
+    position: fixed;
+    left: 250px;
+    top: 450px;
+    background: black;
+    z-index: 1;
+}
+.lingyan{
+        width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    background: black;
+    position: fixed;
+    left: 290px;
+    top: 460px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.lingshu{
+  width: 5px;
+    height: 30px;
+    position: fixed;
+    left: 298px;
+    top: 482px;
+    background: black;
+    z-index: 1;
+}

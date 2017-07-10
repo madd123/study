@@ -1,0 +1,45 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+clear-float::after,clear-float:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+/*.father{
+    width: 600px;
+    height: 400px;
+  
+    background:url("./qingxin.jpeg") no-repeat,url("./yellow.jpg") no-repeat;
+    background-size: 600px 400px;
+    background-blend-mode: multiply;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+background-blend-mode练习*/
+
+/*.father{
+    background: url("./download.jpg") no-repeat;
+    background-size: 600px 300px;
+}*/
+/*.son{
+    width: 100px;
+    height: 100px;
+    background: black;
+    float: left;
+    transition: all 1s;
+}
+.son1:hover{
+    border-radius:100% 0 0 0;
+}
+.son2:hover:hover{
+    border-radius:0 100% 0 0;
+}
+.son3:hover{
+    border-radius:0 0 0 100%;
+}
+.son4:hover{
+    border-radius:0 0 100% 0;
+}   圆角练习*/
