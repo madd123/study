@@ -97,7 +97,7 @@ nth-child练习*/
 
 
 
-.a1{
+/*.a1{
     width: 400px;
     height: 300px;
     border-radius: 200px 200px 200px 200px;
@@ -310,4 +310,447 @@ nth-child练习*/
     top: 482px;
     background: black;
     z-index: 1;
+}*/
+
+
+.tophead{
+    width: 1600px;
+    height: 35px;
+    background: #f5f5f5;
 }
+.tophead div>span{
+       font: normal 9px/32px "Arial";
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    color: #6c6c6c;
+    float: left;
+    position: relative;
+    left: 200px;
+}
+.tophead>.topwenzi1>span{
+    color: #f22e00;   
+}
+.tophead>.topwenzi2>span{
+    left: 210px;
+}
+.tophead>.topwenzi3>span{
+    left: 235px;
+}
+.tophead>.topwenzib>span{
+    left: 650px;
+}
+.tophead>.topwenzi5>span{
+    left: 685px;
+}
+.tophead>.topwenzi6>span{
+    left: 720px;
+}
+.tophead>.topwenzi7>span{
+    left: 755px;
+}
+.tophead>.topwenzi8>span{
+    left: 790px;
+}
+.tophead>.topwenzi9>span{
+    left: 825px;
+}
+.tophead>.topwenzi10>span{
+    left: 860px;
+}
+.tophead .topwenzib>.angle{
+   border-width: 3px 3px 3px 3px;
+    border-color: #a8aaa6 #f5f5f5 #f5f5f5 #f5f5f5;
+    position: relative;
+    border-style: solid;
+    width: 0px;
+    height: 0px;
+    left: 660px;
+    top: 13px;
+    float: left;
+}
+.tophead .topwenzib>.angle2{
+    left: 695px;
+}
+.tophead .topwenzib>.angle3{
+    left: 730px;
+}
+.tophead .topwenzib>.angle4{
+    left: 800px;
+}
+.tophead .topwenzib>.angle5{
+    left: 835px;
+}
+.tophead .topwenzib>.angle6{
+    left: 870px;
+}
+.tophead>.topwenzi7>.shuxian{
+   width: 2px;
+    height: 13px;
+    position: absolute;
+    left: 1126px;
+    top: 11px;
+    background: #e4dde4;
+}
+.tophead>.topwenzi5>.gouwuchetupian{
+    position: absolute;
+    background: url(./gouwuche.png) no-repeat;
+    left: 892px;
+    top: 9px;
+    width: 14px;
+    height: 14px;
+}
+.tophead>.topwenzi6>.xingxingtupian{
+   position: absolute;
+    background: url(./xingxing.png) no-repeat;
+    left: 969px;
+    top: 9px;
+    width: 14px;
+    height: 14px;
+}
+.tophead>.topwenzi10>.sandaogangtupian{
+      position: absolute;
+    background: url(./logo.png) no-repeat;
+    left: 1308px;
+    top: 9px;
+    width: 25px;
+    height: 25px;
+}
+/*最上面排版*/
+
+
+.secondhead{
+    height: 130px;
+    width: 1600px;
+    position: relative;
+}
+.secondhead>.taobaologo{
+    position: absolute;
+    background: url("./taobaologo.png") no-repeat;
+    width: 147px;
+    height: 64px;
+   top: 45px;
+    left: 215px;
+}
+.secondhead>.shurukuang{
+   width: 637px;
+    height: 50px;
+    position: absolute;
+    left: 460px;
+    top: 60px;
+}
+.secondhead>.shurukuang>input{
+    width: 505px;
+    height: 40px;
+    position: relative;
+    left: 0;
+    top: 1px;
+   border: 3px solid #ff5500;
+}
+.secondhead>.shurukuang>.shousuo{
+   width: 120px;
+    height: 42px;
+    position: relative;
+    top: -47px;
+    left: 510px;
+    border: 3px solid #ff5500;
+    background: #ff4200;
+}
+.secondhead>.shurukuang>.shousuo>span{
+     font: normal 18px/32px "Arial";
+    display: block;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;   
+}
+.secondhead>.shurukuang>.camera{
+   width: 17px;
+    height: 16px;
+    position: relative;
+    left: 480px;
+   top: -79px;
+    background: url(./camera.png) no-repeat;
+}
+.secondhead>.hanzi1>.content>.fangdajing{
+      width: 82px;
+    height: 20px;
+    position: relative;
+    left: 11px;
+    top: 40px;
+    background: url(./fangdajing.png) no-repeat;
+    z-index: 1;
+}
+.secondhead .hanzi{
+    width: 50px;
+    height: 25px;
+     position: relative;
+    left: 460px;
+    top: 37px;
+    float: left;
+}
+.hanzi>.tap>span{
+    font: normal 9px/32px "Arial";
+    display: block;
+    line-height: 29px;
+    text-align: center;
+    color: #ff4400;
+    float: left;
+    position: relative;
+    left: 0px;
+    top: -1px;
+    width: 50px;
+    height: 25px;
+}
+.secondhead>.hanzi1>.tap>span{
+    background: #ff5400;
+    color: #ffffff;
+}
+.secondhead>.hanzi1>.tap:hover>span{
+    background: #c60000;
+    
+    }
+.secondhead>.hanzi2>.tap:hover>span,.secondhead>.hanzi3>.tap:hover>span{
+    background: #c60000;
+    color: #ffffff;
+}
+
+.secondhead>.hanzi2>.content{
+    width: 511px;  
+     position: relative;
+    left: 0;
+    top: 1px;
+    display: none;
+}
+.secondhead>.hanzi2>.content>.hezi>span{
+     height: 35px;
+    font: normal 10px/32px "Arial";
+    display: block;
+    position: absolute;
+    left: 34px;
+    top: 10px;
+    background: white;
+     color: #6c6c6c;
+}
+.secondhead>.hanzi2>.tap:hover+*{
+       display: block;
+    z-index: 1;
+    position: relative;
+    left: -52px;
+    top: 24px; 
+}
+.secondhead>.hanzi3>.content{
+    width: 511px;  
+     position: relative;
+    left: 0;
+    top: 1px;
+    display: none;
+}
+.secondhead>.hanzi3>.content>.zihe>span{
+        height: 35px;
+    width: 70px;
+    font: normal 10px/32px "Arial";
+    display: block;
+    position: absolute;
+    left: -16px;
+    top: 10px;
+    background: white;
+    color: #6c6c6c;
+}
+.secondhead>.hanzi3>.tap:hover+*{
+       display: block;
+    z-index: 1;
+    position: relative;
+    left: -52px;
+    top: 24px; 
+}
+.secondhead>.wenzi{
+    width: 40px;
+    position: relative;
+    height: 40px;
+    left: 1098px;
+   top: 60px;
+}
+.secondhead>.wenzi>span{
+    font: normal 12px/2px "Arial";
+    text-align: center;
+    line-height: 2;
+    color: #666666;
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 35px;
+    height: 40px;
+}
+.secondhead>.fangkuang>.taobaoerweima{
+     position: absolute;
+    background: url(./erweima.png) no-repeat;
+    width: 80px;
+    height: 80px;
+    top: 20px;
+    left: 8px;
+}
+.secondhead>.fangkuang{
+    width: 95px;
+    height: 110px;
+    border: 1px solid #eeeeee;
+    position: relative;
+        top: -10px;
+    left:1307px;
+}
+.secondhead>.fangkuang>span{
+     font: normal 9px/32px "Arial";
+    display: block;
+    line-height: 20px;
+    text-align: center;
+    color: #ff4400;
+    float: left;
+    position: relative;
+       left: 21px;
+       top: 1px;
+    width: 50px;
+    height: 20px;
+}
+.secondhead>.xiaofangkuang{
+    width: 20px;
+    height: 20px;  
+    border: 1px solid #eeeeee;
+    position: relative;
+      top: -122px;
+    left: 1286px;
+}
+.secondhead>.xiaofangkuang>.chacha{
+    background: url(./chacha.png) no-repeat;
+    position: relative;
+    top: 3px;
+    left: 3px;
+    width: 13px;
+    height: 13px;
+}
+.wenziqun{
+       width: 625px;
+    height: 25px;
+    position: relative;
+    top: -18px;
+    left: 60px;
+}
+.wenziqun .wenzipaiban>span{
+     font: normal 9px/32px "Arial";
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    color: #6c6c6c;
+    float: left;
+    position: relative;
+    left: 400px;
+}
+.wenziqun>.zi2>span{
+    left: 410px;
+}
+.wenziqun>.zi3>span{
+    left: 420px;
+     color: #ff4400;
+}
+.wenziqun>.zi4>span{
+    left: 430px;
+}
+.wenziqun>.zi5>span{
+    left: 440px;
+}
+.wenziqun>.zi6>span{
+    left: 450px;
+}
+.wenziqun>.zi7>span{
+    left: 460px;
+}
+.wenziqun>.zi8>span{
+    left: 470px;
+}
+.wenziqun>.zi9>span{
+    left: 480px;
+}
+.wenziqun>.zi10>span{
+    left: 490px;
+}
+.wenziqun>.zi11>span{
+    left: 500px;
+}
+.wenziqun>.zi12>span{
+    left: 550px;
+}
+.wenziqun .wenzipaiban>span:hover{
+    color: #ff4400;
+}
+/*淘宝网logo一行排版*/
+.wenziqun2{
+       width: 845px;
+    height: 35px;
+    position: relative;
+    top: -9px;
+        left: 15px;
+}
+.wenziqun2 .wenzipaiban2>span{
+     font: normal 15px/32px "Arial";
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    color:#3c3c3c;
+    float: left;
+    position: relative;
+    left: 400px;
+}
+.wenziqun2>.zi1>span,.wenziqun2>.zi2>span,.wenziqun2>.zi3>span{
+    font: normal 18px/32px "Arial";
+    color: #ff4400;
+}
+.wenziqun2>.zi2>span{
+    left: 415px;
+}
+.wenziqun2>.zi3>span{
+    left: 430px;
+}
+.wenziqun2>.zi4>span{
+    left: 465px;
+}
+.wenziqun2>.zi5>span{
+    left: 480px;
+}
+.wenziqun2>.zi6>span{
+    left: 495px;
+}
+.wenziqun2>.zi7>span{
+    left: 510px;
+}
+.wenziqun2>.zi8>span{
+    left: 525px;
+}
+.wenziqun2>.zi9>span{
+    left: 555px;
+}
+.wenziqun2>.zi10>span{
+    left: 570px;
+}
+.wenziqun2>.zi11>span{
+    left: 585px;
+}
+.wenziqun2 .wenzipaiban2>span:hover{
+    background: #ff4200;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+}
+.wenziqun2>.zi4>.shuxian{
+        width: 2px;
+    height: 18px;
+    position: absolute;
+        left: 610px;
+    top: 8px;
+    background: #e4dde4;
+}
+.wenziqun2>.zi9>.shuxian{
+        width: 2px;
+    height: 18px;
+    position: absolute;
+       left: 970px;
+    top: 8px;
+    background: #e4dde4;
+}
+/*头部总体排版*/
