@@ -1347,7 +1347,7 @@ clear-float::after,clear-float:after{
     position: absolute;
     left: 0;
     top: 40px;
-    border: 1px solid blue;
+   
 }
 .wholepaiban>.youpaiban>.you1>.youzi2>.box.box1>.content>.a1>span{
     font: normal 12px/30px "Arial";
@@ -1400,6 +1400,246 @@ clear-float::after,clear-float:after{
 .wholepaiban>.youpaiban>.you1>.youzi2 .box>.content{
     display: none;
 }
-.wholepaiban>.youpaiban>.you1>.youzi2>.box1.box>.content{
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box1>.content{
     display: block;
+}
+
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content{
+    display: none;
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b1>span{
+    font: normal 12px/30px "Arial";
+    position: relative;
+    left: 20px;
+    top: 0;
+    text-align: center;
+    
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b1{
+        width: 145px;
+    position: relative;
+    left: -13px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b2>span{
+    font: normal 12px/30px "Arial";
+    position: relative;
+    left: 40px;
+    top: 0;
+    text-align: center;
+    
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b2{
+         width: 145px;
+    position: relative;
+    top: -30px;
+    left: 110px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b3>span{
+    font: normal 12px/30px "Arial";
+    position: relative;
+    left: 20px;
+    top: 0px;
+    text-align: center;
+    
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b3{
+     width: 145px;
+    position: relative;
+    top: -30px;
+    left: -14px;
+
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b4>span{
+    font: normal 12px/30px "Arial";
+    position: relative;
+    left: 40px;
+    top: 0px;
+    text-align: center;
+    
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content>.b.b4{
+       width: 145px;
+    position: relative;
+    top: -60px;
+    left: 110px;
+
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2>.content .b>span:hover{
+      color: #f94a14;
+}
+.wholepaiban>.youpaiban>.you1>.youzi2>.box.box2:hover>.content{
+    display: block;
+    z-index: 100;
+    background: white;
+}
+/*youzi2排版*/
+
+.wholepaiban>.youpaiban>.you1>.youzi3{
+       width: 290px;
+    height: 200px;
+    position: relative;
+    left: 0px;
+    top: 171px;
+    
+}
+.wholepaiban>.youpaiban>.you1>.youzi3 .c{
+    width: 70px;
+    height: 67px;
+    float: left;
+    background: white;
+    border: 1px solid #eaeaea;
+    position: relative;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3 .c>.tu{
+    width: 40px;
+    height: 40px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c1>.tu{
+    background: url(./huafei.png) no-repeat;
+    position: absolute;
+    background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c2>.tu{
+       background: url(./youxi.jpg) no-repeat;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background-size: 25px 25px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c3>.tu{
+       background: url(./lvxing.png) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c4>.tu{
+       background: url(./baoxian.jpg) no-repeat;
+    position: absolute;
+    background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c5>.tu{
+       background: url(./caipiao.jpg) no-repeat;
+    position: absolute;
+    background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c6>.tu{
+       background: url(./dianying.png) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c7>.tu{
+       background: url(./waimai.jpg) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c8>.tu{
+       background: url(./licia.jpg) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c9>.tu{
+       background: url(./zhaofuwu.jpg) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c10>.tu{
+       background: url(./music.png) no-repeat;
+    position: absolute;
+    background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c11>.tu{
+       background: url(./shuimeiqi.jpg) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3>.c.c12>.tu{
+       background: url(./huochepiao.png) no-repeat;
+    position: absolute;
+     background-size: 25px 25px;
+    top: 10px;
+    left: 20px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3 .c>.hanzi>span{
+         font: normal 13px/30px "Arial";
+    position: absolute;
+     left: 17px;
+    top: 35px;
+    text-align: center;
+        color: #666666;
+}
+.wholepaiban>.youpaiban>.you1>.youzi3 .c>.hanzi>span:hover{
+    color: #f94a14;
+}
+.wholepaiban>.youpaiban>.you1>.youzi4{
+      width: 290px;
+    height: 112px;
+    position: relative;
+    left: 0px;
+    top: 179px;
+    border: 1px solid blue;
+    background: #ffffff;
+}
+.wholepaiban>.youpaiban>.you1>.youzi4>.apptu{
+    background: url("./aliapp_03.png") no-repeat;
+    width: 65px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.wholepaiban>.youpaiban>.you1>.youzi4>.more>span{
+    font: normal 9px/25px "Arial";
+    display: block;
+    line-height: 25px;
+    text-align: center;
+    color: #3c3c3c;
+    position: relative;
+    left: 20px;
+    top: -7px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi4>.more{
+    height: 25px;
+    width: 70px;
+    position: relative;
+    top: 0;
+    left: 220px;
+}
+  
+
+.wholepaiban>.youpaiban>.you1>.youzi4>.more>span:hover{
+  color: #f94a14;
+}
+.wholepaiban>.youpaiban>.you1>.youzi4>.xiaoqiehuan{
+  width: 290px;
+    height: 90px;
+    position: relative;
+    top: 4px;
+}
+.wholepaiban>.youpaiban>.you1>.youzi4 .box{
+      width: 56px;
+    height: 40px;
+    left: 0;
+    float: left;
+    background: #ffffff;
+    border: 1px solid black;
+    
 }
