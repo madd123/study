@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //   函数语法  
+    //     function ma(a,b)    {
+    //         console.log(a+b);            
+    //     }
+    //    ma("2",3);
+
+
+        
+        //约数的个数函数，能够传入一个数字，吐出来的是约数的个数
+            // function yueshugeshu(a){
+            //     //计算a这个数字约数的个数
+            //     var count=0;
+            //     for(var i =1;i<=a;i++){
+            //         if(a % i == 0){
+            //             count++;
+            //         }
+            //     }
+
+          
+            //  return count;
+            // }
+
+            // console.log(yueshugeshu(10));  //4
+            // console.log(yueshugeshu(6));  //4
+            // console.log(yueshugeshu(3));  //2
+
+
+            //判断是否是质数，如果一个函数的名字去is
+            //就暗示了将返回布尔值，要是是true，要么是false，是通常做法，不是规定
+            //接受一个参数m，返回是否是质数 t 或者 f
+            // function iszhishu(m){
+            //     if( yueshugeshu(m) == 2){
+            //         return true;
+            //     }else{
+            //         return false;
+            //     }
+            // }
+
+            // console.log(iszhishu(3));  //t
+            // console.log(iszhishu(5));  //t
+            // console.log(iszhishu(6));  //f
+            // console.log(iszhishu(10));  //f
+        
+
+
+
+
+
+  
+  function rev(i){ 
+      var i=parseInt(prompt("请输入一个数字")) ; 
+         var gewei = i%10;
+         var shiwei = parseInt( i / 10) % 10;
+         var baiwei = parseInt( i / 100);
+         var n=gewei*100+shiwei*10+baiwei;
+        return n;
+        }
+        console.log(rev())
+      
+
+
+
+
+
+
+
+
+//     //二.判断是否为质数（直接调用上面的函数）
+// function iszhishu(m){
+//     if(yueshugeshu(m)==2){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
+
+// //三.拆分偶数，使其俩个儿子都是质数
+//     var oushu= parseInt(prompt("请输入一个偶数"));
+//     for (var i=1; i<oushu; i++){
+//         if(iszhishu(i)&&iszhishu(oushu-i)){
+//             console.log(oushu + "可以拆分位" + i + "与" +( oushu - i) + "的和")
+//         }
+//     }
+
+
+//    阶乘
+
+            //阶乘函数，接受一个参数，返回这个数字的阶乘
+            // function jiecheng(a){
+
+            //     var s = 1;  //累乘器
+
+            //     for(var i = 1;i<=a;i++){
+            //         s*=i;
+            //     }
+            //     return s;  //返回阶乘
+            // }
+
+            // // console.log(jiecheng(4));  //24
+            // // console.log(jiecheng(5));  //120
+
+            // // 计算 1!+2!+3!...+10!
+            // var sum = 0;  //累加器
+
+            // // 用for来调用10次jiecheng(a)函数
+            // for( var i = 1;i<=10;i++){
+            //     sum += jiecheng(i);
+            // }
+
+            // console.log(sum);   
+        
+    
+
+        // // 考拉数
+        // // 考拉数是一个三位数，它的每个位数的阶乘和，等于它自己
+
+        // //阶乘函数，接受一个参数，返回这个数字的阶乘
+            // function jiecheng(a){
+
+            //     var s = 1;  //累乘器
+
+            //     for(var i = 1;i<=a;i++){
+            //         s*=i;
+            //     }
+            //     return s;  //返回阶乘
+            // }
+
+            // // 从100-999之间
+            // for( var i = 100;i<=999;i++){
+
+            //     // 拆分
+            //     var gewei = i%10;
+            //     var shiwei = parseInt( i / 10) % 10;
+            //     var baiwei = parseInt( i / 100);
+
+            //     if( jiecheng(gewei) + jiecheng(shiwei) + jiecheng(baiwei) == i){
+            //         console.log(i);
+            //     }
+            // }
+        
+//   斐波那契数列
+//         function fib(n){
+//             if (n==1 || n==2){
+//                 return 1;
+//             }else {
+//                 return fib (n-1)+fib(n-2);
+//             }
+//         }
+
+//         for (var i=1; i<=55; i++){
+//             console.log(fib(i));
+//         }
+    		 	
+// IIFE
+//         function sum (a,b,c){
+//             return (function(a,b){
+//                 return a>=b ? a:b;
+//             })(a,b)+c;
+//             }
+        
+
+
+
+// function rev(){
+
+// }
+        </script>
+</body>
+</html>
