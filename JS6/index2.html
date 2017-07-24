@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style type="text/css">
+            div{
+                width: 200px;
+                height: 200px;
+                float: left;
+            }
+            .oDiv1{
+                background-color: red;
+            }
+              .oDiv2{
+                background-color: orange;
+            }
+              .oDiv3{
+                background-color: yellow;
+            }
+              .oDiv4{
+                background-color: green;
+            }
+              .oDiv5{
+                background-color: blue;
+            }
+              .oDiv6{
+                background-color: indigo;
+            }
+              .oDiv7{
+                background-color: purple;
+            }
+</style>
+</head>
+<body>
+            <div class="oDiv1" style="display:none;"></div>
+            <div class="oDiv2" style="display:none;"></div>
+            <div class="oDiv3" style="display:none;"></div>
+            <div class="oDiv4" style="display:none;"></div>
+            <div class="oDiv5" style="display:none;"></div>
+            <div class="oDiv6" style="display:none;"></div>
+            <div class="oDiv7" style="display:none;"></div>
+
+            <script type="text/javascript">
+                oDiv=document.getElementsByTagName("div");
+                    for(var i=0;i<oDiv.length;i++){
+                        
+                        oDiv[i].onclick=function (){
+                            this.style.display = "none";
+                        }
+                    }
+
+
+
+                </script>
+
+
+
+
+</body>
+</html>
