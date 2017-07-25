@@ -1,0 +1,361 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <style type="text/css">
+            img{
+                position:absolute;
+                left:577px;
+                top:100px;
+            }
+        </style>
+</head>
+
+<body>
+      <input type="button" value="移动" id="btn" />
+        <img src="./image/2.jpg" alt="" id="pic" />
+
+
+        <script type="text/javascript">
+            var oImg = document.getElementById("pic");
+            var btn = document.getElementById("btn");
+
+            //信号量
+            var oImgLeft = 577;
+
+            btn.onclick=function(){
+
+                //范围
+                if( oImgLeft >0){
+                    oImgLeft-=40;
+                }else{
+                    oImgLeft=0;
+                }
+
+                // 赋值（移动）
+                oImg.style.left = oImgLeft + 'px';
+            }
+
+        </script>
+</body>
+</html> -->
+
+ <!-- 隔行变色  -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+table,td{
+    border:1px solid black;
+    border-collapse: collapse;
+}
+    td{
+        width: 120px;
+        height: 22px;
+    }
+
+
+</style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+              <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+                                      <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+                                      <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+                                      <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+                                      <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+                                      <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+                                      <tr>
+            <td></td>
+               <td></td>
+                  <td></td>
+                     <td></td>
+                        <td></td>
+                           <td></td>
+                              <td></td>
+                                 <td></td>
+        </tr>
+
+
+
+
+
+    </table>
+    <script>
+        var oTrs=document.getElementsByTagName("tr");
+        for(var i=0;i<oTrs.length;i++){
+            if(i%2==0){
+                oTrs[i].style.backgroundColor="orange";
+            }else{
+                oTrs[i].style.backgroundColor="red";
+            }
+        }
+
+
+</script>
+</body>
+</html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+</style>
+</head>
+<body>
+    <div id="box">
+        <p><input type="checkbox">努力</p>
+        <p><input type="checkbox">努力</p>
+        <p><input type="checkbox">努力</p>
+        <p><input type="checkbox">努力</p>
+        <p><input type="checkbox">努力</p>
+        <p><input type="checkbox">努力</p>
+    </div>
+    <input type="button" value="选择"id="btn" />
+    <script >
+        var aInputs =document.getElementsByTagName("input");
+        var btn=document.getElementById("btn");
+
+        var state =0;
+        btn.onclick=function(){
+            state = state==0? 1 : 0;
+        //checked 的状态
+            var str=state==0? "" : "checked";
+                for(var i=0;i<aInputs.length;i++){
+                    aInputs[i].checked = str;
+                }
+        }
+</script>
+</body>
+</html> -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-right: 10px;
+            background-color: yellow;
+        }
+
+
+</style>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+
+    <script>
+
+        var oPs=document.getElementsByTagName("p");
+        for(var i=0;i<oPs.length;i++){
+            oPs[i].onclick =function(){
+                this.style.backgroundColor="red";
+            }
+        }
+        for(var i=0;i<oPs.length;i++){
+            oPs[i].index=i;
+            oPs[i].onclick =function(){
+                alert("我是老" +this.index +"叫我干嘛~");
+            }
+        }
+</script>
+</body>
+</html>  -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+        }
+
+</style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        var box =document.getElementById("box");
+        var state =0;
+        box.onclick =function(){
+            if(state ==0){
+                state =1;
+                this.style.backgroundColor="red";
+            }else{
+                state =0;
+                this.style.backgroundColor="blue";
+            }
+        }
+
+
+</script>
+</body>
+</html> -->
+
+ 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /* div{
+                width: 600px;
+                height: 100px;
+                border:1px solid gray;
+            } */
+            p{
+                float:left;
+                width: 60px;
+                height: 60px;
+                background-color: #ccc;
+                margin-right: 10px;
+                border-radius: 50%;
+            }
+        </style>
+    </head>
+    <body>
+         <h1 id="title">哈哈</h1> 
+
+        <div id="box1">
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+            <p></p>
+        </div>
+
+        <script type="text/javascript">
+            var box = document.getElementById("box1");
+            // var title = document.getElementById("title");
+            var oPs = box.getElementsByTagName("p");
+
+            //事件监听只有onmouseover没有onmouseout
+            //批量添加事件
+            for( var i=0;i<oPs.length;i++){
+                //编号
+                oPs[i].index = i;
+
+                oPs[i].onclick = function(){
+                    //碰到每个p的时候，实际上是两回事
+                    //第一件事，让所有人（包括自己）都变成灰色
+
+                    for(var j = 0;j<oPs.length;j++){
+                        oPs[j].style.backgroundColor="#ccc";
+                    }
+
+
+                    //第二件事，让自己变红
+                    this.style.backgroundColor="red";
+
+
+                    //第三件事
+                    //alert(title.innerHTML);
+                    title.innerHTML = this.index;
+                }
+
+
+            }
+
+
+        </script>
+    </body>
+</html>

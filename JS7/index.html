@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .oDiv{
+            width: 200px;
+            height: 200px;
+            background-color: orangered;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+        }
+
+
+</style>
+</head>
+<body>
+        <button id="btn1">往左边</button>
+         <button>往右边</button>
+        <div class="oDiv" id="oDiv" style="left:200px;"></div>
+
+
+    <script>
+
+//for循环深入
+        // function fun(){
+        //     console.log(arguments[2]);
+        //     console.log(arguments[3]);
+        //     console.log(arguments.length)
+        //         var sum=0;
+        //         for(var i=0;i<arguments.length;i++){
+        //             sum+=arguments[i];
+        //         }
+        //         console.log(sum);
+        // }
+        //     fun(3,4,5,60,10,20);
+
+        // var a=3;
+        // var b=5;
+        // var c=b;//-----c=5
+        // b=a;//----b=3;
+        // a=c;//----a=5;
+        // console.log(a,b);
+
+                // var btn1=document.getElementsByTagName("button")[0];
+                var btn1=document.getElementById("btn1");
+                var btn2=document.getElementsByTagName("button")[1];
+                var oDiv=document.getElementById("oDiv");
+
+
+            // 信号量
+            var oDivLeft = 200;
+
+
+            btn1.onclick = function(){
+                oDivLeft -= 10;
+                oDiv.style.left= oDivLeft +"px";
+
+            }
+            btn2.onclick = function(){
+                oDivLeft += 10;
+                  oDiv.style.left = oDivLeft +"px";
+            }
+        
+
+</script>
+</body>
+</html>
