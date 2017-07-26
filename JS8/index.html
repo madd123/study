@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    div{
+        width: 200px;
+        background-color: yellow;
+        padding: 10px 20px 30px;
+        border: 10px solid red;
+    }
+
+
+</style>
+</head>
+<body>
+    <div>
+        文字文字文字文字
+    </div>
+        <script>
+            // var oDiv=document.getElementsByTagName("div")[0];
+            // if(window.getComputedStyle){
+            //     alert(getComputedStyle(oDiv)["paddingLeft"]);
+
+            // }else{
+            //     alert(oDiv.currentStyle["paddingLeft"]);
+            // }
+
+
+            function fetchComputedStyle(obj,property){
+                if(window.getComputedStyle){
+            return window.getComputedStyle(obj)[property];
+            }else{
+                return obj.currentStyle[property];
+            }
+var oDiv=document.getElementsByTagName("div")[0];
+            alert(fetchComputedStyle(oDiv,"padding-left"));
+</script>
+
+
+
+</body>
+</html>
