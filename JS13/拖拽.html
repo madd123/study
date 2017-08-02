@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+        
+        #oDiv2 {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            background: blue;
+        }
+        
+        #oDiv3 {
+            position: absolute;
+            left: 300px;
+            top: 100px;
+            background: greenyellow;
+        }
+        
+        .oDiv1 {
+            top: 200px;
+            left: 200px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="oDiv">box1</div>
+    <div id="oDiv2">box2</div>
+    <div id="oDiv3">box3</div>
+    <div class="oDiv1"></div>
+
+    <script type="text/javascript">
+        /*
+                          拖拽需要的事件
+                         1.onmousedown：当鼠标按下 选择元素
+                            2.onmousemove：元素跟随
+                             3.onmouseup：鼠标抬起元素释放（清空事件）                                                                                                                                
+                                              */
+
+        var oDiv = document.getElementById("oDiv");
+        var oDiv2 = document.getElementById("oDiv2");
+        var oDiv3 = document.getElementById("oDiv3");
+
+
+
+
+        // 当oDiv触发onmosedowm事件的情况下
+        var fn = function(a) {
+            a.onmousedown = function(event) {
+
+                var disX = event.clientX - this.offsetLeft;
+                var disY = event.clientY - this.offsetTop;
+
+                //存储两个值，鼠标当前位置减去鼠标当前拖拽div的left、top
+
+                //鼠标移动时候改变left和top
+                document.onmousemove = function(event) {
+                    // console.log(disX,disY);
+                    a.style.left = event.clientX - disX + "px";
+                    a.style.top = event.clientY - disY + "px";
+
+                    // 得到当前div的位置：用当前移动的位置减去存好距离
+
+                    // 会有一些bug，把oDiv换成document会防止鼠标过快
+                }
+                document.onmouseup = function() {
+                    document.onmousemove = document.onmouseup = null;
+
+                    //会有一些bug，把oDiv换成document回防止其他元素覆盖后的事件触发
+                }
+                return false;
+            }
+        }
+        fn(oDiv);
+        fn(oDiv2);
+        fn(oDiv3);
+    </script>
+</body>
+
+</html>

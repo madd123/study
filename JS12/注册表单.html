@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1>注册表单</h1>
+        <form action="" name="f1">
+            <p>手机号注册：<input type="text" id="un" placeholder="请输入手机号，共11位数字" /></p>
+             <p>电话号码注册：<input type="password" id="up7" placeholder="请输入电话号码" /></p> 
+            <p>QQ号注册：<input type="password" id="up" placeholder="请输入QQ号" /></p>
+            <p>Email注册：<input type="password" id="up2" placeholder="请输入Email账号" /></p> 
+            <p>身份证号：<input type="password" id="up3" placeholder="请输入身份证号" /></p> 
+            
+            <p>账号：<input type="text" id="up4" placeholder="请创建一个账号" /></p>
+             <p>密码：<input type="password" id="up5" placeholder="请创建密码" /></p>
+            <p>重复密码：<input type="password" id="up6" placeholder="请再次输入密码" /></p> 
+             <p><input type="reset" /><input type="button" id="btn" value="注册" /></p>
+        </form>
+        <script>
+var btn = document.getElementById("btn");
+var re =/^1[34578]\d{9}$/;
+var re2 =/[1-9][0-9]{4,}/;
+var re3 =/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+var re4 =/^\d{15}|\d{18}$/;
+var re5 =/^[a-zA-Z][a-zA-Z0-9_]{4,15}$/;
+var re6=/^[a-zA-Z]\w{5,17}$/;
+var re7= /^(\d{3,4}-)?\d{7,8}$/;
+  btn.onclick = function(){
+            if(re.test(un.value) ){
+                // alert("输入的是一个手机号~注册成功~~！");
+            }else{
+                alert("输入的不是一个手机号~请重新输入");
+            }
+             if(re7.test(up7.value) ){
+                // alert("输入的是一个电话号码~注册成功~~！");
+            }else{
+                alert("输入的不是一个电话号码~请重新输入");
+            }
+              if(re2.test(up.value) ){
+                // alert("输入的是一个QQ号~注册成功~~！");
+            }else{
+                alert("输入的不是一个QQ号~请重新输入");
+            }
+              if(re3.test(up2.value) ){
+                // alert("输入的是一个Email账号~注册成功~~！");
+            }else{
+                alert("输入的不是一个Email账号~请重新输入");
+            }
+                  if(re4.test(up3.value) ){
+                // alert("输入的是一个身份证号~注册成功~~！");
+            }else{
+                alert("输入的不是一个身份证号~请重新输入");
+            }
+             if(re5.test(up4.value)){
+                    // alert("输入的是一个账号!请继续操作~");
+                }else{
+                     alert("输入的不是一个账号！");
+                }  
+                 if(re6.test(up5.value)){
+                    // alert("输入的是一个密码！请继续操作~");
+                }else{
+                     alert("输入的不是一个密码！");
+                } 
+                if(f1.up5.value==f1.up6.value&&f1.up5.value){
+                     f1.submit();
+                     alert("注册成功");
+                } else{
+                   alert("密码不一致，请重新输入！");
+              }
+  }
+
+        </script>
+ 
+</body>
+</html>

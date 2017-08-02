@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+            // 找到字符串中数字的部分
+            // var str = "今年涨工资了！现在工资20000元。房贷还有-5.3万，今年又大了1岁，现在29岁";
+
+            // var re = /-?\d+\.?\d?/g;
+            // console.log( str.match(re));
+
+            // 正则中 没有g修饰 match exec是一样的
+            // var str = "ABCDEFG";
+
+            // var re = /[A-Z]/;
+
+            // console.log(str.match(re));  //A
+            // console.log(re.exec(str));   //A
+
+            // 寻找连续相同的
+            // var str = "aaacccbbbbbfffffyddddddeeegg";
+
+             // (\w)一个字符，被调用一次以上
+            // var re = /(\w)\1+/g;
+            // console.log( str.match(re));
+
+            // 修饰词i  不区分大小写
+            // var str = "abc";
+            // var re = /A/i;
+
+            // console.log( re.test(str) );
+
+            // 寻找最连续的字母
+            // var str = "aaacccbbbbbfffffffffyddddddeeegg";
+             // var re = /(\w)\1+/g;
+
+             // 通过正则，找到了符合条件的数组，里面存储了字符串
+            // var array= str.match(re);
+
+            // console.log(array);
+
+            // var maxLength = 0;
+            // var maxStr = '';
+            // for( var i=0;i<array.length;i++){
+            //     if(array[i].length > maxLength){
+            //         maxLength=array[i].length;
+            //         maxStr=array[i];
+            //     }
+            // }
+
+            // console.log( maxStr );
+
+            // 找到第一个连续的，得到下标
+            var str = "abadsf2222adsgaoooasdfa";
+
+            var re = /(\w)\1+/;
+
+            console.log( str.match(re));
+            console.log(str.search(re));  //下标 6
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

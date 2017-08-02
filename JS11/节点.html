@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div>
+            <span>1</span>
+        </div>
+
+
+        <script type="text/javascript">
+            var oDiv = document.getElementsByTagName("div")[0];
+            /*
+            节点类型
+            元素节点
+                数字 1
+
+            文本节点
+                    3
+            */
+            // console.log(oDiv.nodeType);
+            console.log( oDiv.childNodes[1].nodeType);
+            console.log( oDiv.childNodes.length);
+            console.log( document.nodeType);
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var str ="123nwfdhfw12213hldwf121";
+//找到单个数字
+
+//     function findNumber(str){
+//         var arr =[];
+//         for(var i=0;i<str.length;i++){
+//             if(str.charAt(i)<=9 && str.charAt(i)>=0){
+//                 arr.push(str.charAt(i));
+//             }
+//         }
+//         return arr;
+//     }
+// alert(findNumber(str));
+
+//用正则表达式找到数字
+// function findNumber(str){
+//     return str.match(/\d+/g);
+
+// }
+//  alert(findNumber(str));
+
+
+//普通方法寻找到数字
+function findNumber(str){
+    var arr =[];
+    var newStr ="";
+    for(var i=0;i<str.length;i++){
+        if(str.charAt(i)<=9 && str.charAt(i)>=0){
+            newStr+=str.charAt(i);
+        }else{
+            if(newStr){
+                arr.push(newStr);
+                newStr="";
+            }
+        }
+    }
+    if(newStr){
+        arr.push(newStr);
+        newStr="";
+    }
+    return arr;
+}
+    alert( findNumber(str) );
+    </script>
+
+
+</body>
+<!-- </html> -->
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //match
+// var str ="aaacccbbbbeebbccbbbaa"
+// console.log(str.match(/b+/g));
+// console.log(str.match(/bb/));
+
+
+   //replace
+// var str ="www.baidu.cn";//方法一
+// // console.log(str.replace(/baidu\.cn/,"baidu.com"));
+// console.log(str.replace(/baidu\.cn/,function(){
+//     return "baidu.com";//方法二
+// }))
+//search 和indexof功能类似，但可以使用正则表达式
+// var str="abcde";
+// console.log(str.indexOf("cd"));
+// console.log(str.search("cd"));
+// console.log(str.search(/cd/));
+
+
+var str="a b c";
+console.log(str.split(""));
+console.log(str.split(/\s+/));
+</script>
+</body>
+</html> --> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var str = "aaacccbbbbbfffffffffyddddddeeegg";
+        var re = /(\w)\1+/g;
+        var array= str.match(re);
+            var maxLength = 0;
+            var maxStr = '';
+            for( var i=1;i<array.length;i++){
+                if(array[i].length > array[i-1].length){
+                    maxLength=array[i].length;
+                    maxStr=array[i];
+                }
+            }
+            console.log( maxStr );
+            
+
+            var str ="alkdldladal2132413333";
+            var re =/(\w)\1+/;
+            console.log(str.match(re));
+            console.log(str.search(re));//找到下标
+    </script>
+</body>
+</html>

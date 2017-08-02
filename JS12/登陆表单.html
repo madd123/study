@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>登录表单</h1>
+        <form action="" name="f1">
+            <p>账号：<input type="text" id="un" placeholder="请输入账号" /></p>
+             <p>密码：<input type="password" id="up" placeholder="请输入密码" /></p>
+            <p>重复密码：<input type="password" id="up1" placeholder="请再次输入密码" /></p> 
+            <p><input type="reset" /><input type="button" id="btn" value="登陆" /></p>
+        </form>
+
+        <script type="text/javascript">
+            var btn = document.getElementById("btn");
+             var re =/^[a-zA-Z][a-zA-Z0-9_]{4,15}$/;
+             var re2=/^[a-zA-Z]\w{5,17}$/;
+            btn.onclick = function(){
+                if(re.test(un.value)){
+                    // alert("输入的是一个账号!请继续操作~");
+                }else{
+                     alert("输入的不是一个账号！");
+                }  
+                 if(re2.test(up.value)){
+                    // alert("输入的是一个密码！请继续操作~");
+                }else{
+                     alert("输入的不是一个密码！");
+                } 
+                if(f1.up.value==f1.up1.value&&f1.up.value){
+                     f1.submit();
+                     alert("登陆成功");
+                } else{
+                   alert("密码不一致，请重新输入！");
+              }
+            }
+          
+           
+
+
+        </script>
+    </body>
+</html>

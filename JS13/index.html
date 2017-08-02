@@ -1,0 +1,363 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style> 
+    body{
+        height: 4000px;
+    }
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: greenyellow;
+    }
+        </style>
+</head>
+<body>
+     <div></div>
+
+     <a href="http://www.baidu.com">百度一下</a>
+     <script>   
+    document.oncontextmenu=function(event){
+        alert(1);
+        event.preventDefault();//阻止默认事件的触发
+    }
+     var oA =document.getElementsByTagName("a")[0];
+
+            //阻止a标签的默认跳转
+            oA.onclick=function(event){
+                event.preventDefault();
+            }
+
+            </script>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: absolute;
+        }
+        
+        .oDiv1 {
+            top: 200px;
+            left: 200px;
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="oDiv"></div>
+    <div class="oDiv1"></div>
+    <script>
+        var oDiv = document.getElementById("oDiv");
+        // 当oDiv触发onmosedowm事件的情况下
+        oDiv.onmousedown = function(event) {
+
+            var disX = event.clientX - this.offsetLeft;
+            var disY = event.clientY - this.offsetTop;
+
+            //存储两个值，鼠标当前位置减去鼠标当前拖拽div的left、top
+
+            //鼠标移动时候改变left和top
+            document.onmousemove = function(event) {
+                // console.log(disX,disY);
+                oDiv.style.left = event.clientX - disX + "px";
+                oDiv.style.top = event.clientY - disY + "px";
+
+                // 得到当前div的位置：用当前移动的位置减去存好距离
+
+                // 会有一些bug，把oDiv换成document会防止鼠标过快
+            }
+            document.onmouseup = function() {
+                document.onmousemove = document.onmouseup = null;
+
+                //会有一些bug，把oDiv换成document回防止其他元素覆盖后的事件触发
+            }
+
+            return false;
+        }
+    </script>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .carousel {
+            width: 672px;
+            height: 350px;
+            margin: 50px auto;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .carousel ul {
+            list-style: none;
+        }
+        
+        .carousel ul li {
+            display: none;
+        }
+        
+        .carousel ul li.current {
+            display: block;
+        }
+        
+        .carousel span {
+            position: absolute;
+            width: 55px;
+            height: 55px;
+            top: 130px;
+            cursor: pointer;
+        }
+        
+        .carousel .leftBtn {
+            left: 10px;
+            background-image: url(img/slide-btnL.png);
+        }
+        
+        .carousel .rightBtn {
+            right: 10px;
+            background-image: url(img/slide-btnR.png);
+        }
+        
+        .carousel .circles {
+            position: absolute;
+            bottom: 0px;
+            width: 200px;
+            height: 145px;
+            left: 100%;
+            margin-left: -50px;
+        }
+        
+        .circles ol {
+            list-style: none;
+        }
+        
+        .circles ol li {
+            float: left;
+            width: 17px;
+            height: 17px;
+            margin-right: 13px;
+            background-color: orangered;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        
+        .circles ol li.current {
+            background-color: skyblue;
+        }
+        
+        input {
+            position: absolute;
+            top: 99px;
+            left: 0px;
+        }
+        
+        #ull {
+            position: absolute;
+            top: 145px;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            color: red;
+            font-size: 30px;
+        }
+        
+        #btn {
+            position: absolute;
+            top: 99px;
+            left: 173px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="carousel">
+        <ul id="aUl">
+            <li class="current">
+                <a href="#">
+                    <img src="img/aaa.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/bbb.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/ccc.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/ddd.jpg" alt="" />
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/eee.jpg" alt="" />
+                </a>
+            </li>
+        </ul>
+
+        <div class="btns">
+            <span class="leftBtn" id="leftBtn"></span>
+            <span class="rightBtn" id="rightBtn"></span>
+        </div>
+        <div class="circles" id="circles">
+            <ol>
+                <li class="current"></li><br>
+                <li></li><br>
+                <li></li><br>
+                <li></li><br>
+                <li></li><br>
+            </ol>
+        </div>
+
+    </div>
+    <input type="text" id="txt" />
+    <input type="button" value="点我" id="btn" />
+    <ul id="ull">
+        <li>我是第1个</li>
+        <li>我是第2个</li>
+        <li>我是第3个</li>
+        <li>我是第4个</li>
+    </ul>
+
+    <script type="text/javascript">
+        //得到所有元素，左右按钮，焦点，每个图片的li
+        var leftBtn = document.getElementById("leftBtn");
+        var rightBtn = document.getElementById("rightBtn");
+        var aUl = document.getElementById("aUl");
+        var aLis = aUl.getElementsByTagName("li");
+        var circlesLis = document.getElementById("circles").getElementsByTagName("li");
+        var oUl = document.getElementsByTagName("ul")[1];
+        var lis = oUl.getElementsByTagName("li");
+        var txt = document.getElementById("txt");
+        var btn = document.getElementById("btn");
+
+        btn.onclick = function() {
+
+            //创建一个新的li，创建出来以后就是孤儿节点
+            var oLi = document.createElement("li");
+
+            //改变li的内容 innerHTML
+            oLi.innerHTML = txt.value;
+            //在lis[].的前面插入
+
+            oUl.insertBefore(oLi, lis[1]);
+        };
+
+
+        btn.addEventListener("click", function() {
+
+            //创建一个新的li，创建出来以后就是孤儿节点
+            var oLi = document.createElement("li");
+
+            //改变li的内容 innerHTML
+            oLi.innerHTML = txt.value;
+            //在lis[].的前面插入
+
+            aUl.insertBefore(oLi, aLis[1]);
+
+        }, true);
+
+        //信号量
+        var img_idx = 0; //取值范围 0,1,2,3,4
+
+        //加上一个定时器
+        // setInterval(function() {
+        //     img_idx++;
+        //     if (img_idx > 4) {
+        //         img_idx = 0;
+        //     }
+        //     chengPic();
+        // }, 1000)
+        leftBtn.onclick = function() {
+            img_idx--;
+            if (img_idx < 0) {
+                img_idx = 4;
+            }
+
+            //调用函数
+            chengPic();
+        }
+        rightBtn.onclick = function() {
+            img_idx++;
+            if (img_idx > 4) {
+                img_idx = 0;
+            }
+
+            //调用函数
+            chengPic();
+        }
+
+        //小圆点的监听，要批量添加
+
+        for (var i = 0; i < circlesLis.length; i++) {
+            // 先编号
+            circlesLis[i].index = i;
+
+            //监听
+            circlesLis[i].onmouseover = function() {
+
+                img_idx = this.index;
+
+                //调用业务函数
+                chengPic(); //这个函数帮你换图，帮你换小圆点是橙色还是紫色
+            }
+
+
+        }
+
+
+
+        //业务函数
+        function chengPic() {
+
+            //去掉所有li的current类名
+            for (var i = 0; i < aLis.length; i++) {
+                aLis[i].className = "";
+            }
+
+            //把当前信号量的图片li加上current类名
+            aLis[img_idx].className = "current";
+
+            //去掉所有小圆点current
+            for (var i = 0; i < circlesLis.length; i++) {
+                circlesLis[i].className = "";
+            }
+
+            //把当前信号量的小圆点li加上current类名
+            circlesLis[img_idx].className = "current";
+        }
+    </script>
+</body>
+
+</html>

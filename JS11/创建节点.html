@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="text" id="txt" />
+        <input type="button" value="点我" id="btn" />
+
+        <ul>
+            <li>AAAAA</li>
+            <li>BBBBB</li>
+            <li>CCCCC</li>
+        </ul>
+
+
+        <script type="text/javascript">
+            var txt = document.getElementById("txt");
+            var btn = document.getElementById("btn");
+            var oUl = document.getElementsByTagName("ul")[0];
+
+            btn.onclick=function(){
+                //创建一个li的标签，用变量oLi来表示。创建出来的节点不是任何节点的儿子
+                //也就是说没有在DOM树上
+                var oLi = document.createElement("li");
+
+                oLi.innerHTML = txt.value;  //改变这个节点的内容
+
+
+                // 把新创建的节点，追加到DOM树上
+                oUl.appendChild(oLi);
+            }
+
+
+        </script>
+    </body>
+</html>

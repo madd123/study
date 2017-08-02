@@ -1,0 +1,308 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    img{
+        width: 40px;
+    }
+    </style>
+</head>
+<body>
+  <img src="image/0.png" alt="">
+  <img src="image/0.png" alt="">
+  :
+  <img src="image/0.png" alt="">
+  <img src="image/0.png" alt="">
+  :
+  <img src="image/0.png" alt="">
+  <img src="image/0.png" alt="">
+  <button>点击替换</button>
+  <script>
+    var aimg=document.getElementsByTagName("img");
+    var btn=document.getElementsByTagName("button")[0];
+   
+   function toDouble(num){
+       if(num<10){
+           return "0"+num;
+       }else{
+           return"" +num;
+       }
+   }
+   function fun(){
+       var oDate =new Date();
+       var str=toDouble(oDate.getHours())+toDouble(oDate.getMinutes())+toDouble(oDate.getSeconds());
+       for(var i=0;i<str.length;i++){
+           aimg[i].src="image/"+str[i]+".png";
+       }
+   }
+   setInterval(fun,1000);
+   fun();
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var r=Math.random()*10;
+    console.log(r);
+        var r1=Math.ceil(r);
+        console.log(r1);
+        var r2=Math.floor(r);
+        console.log(r2);
+        var r3=Math.round(r);
+        console.log(r3);
+
+
+
+    </script>
+</body>
+</html> -->
+
+ 
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="点菜单">
+    <script>
+    var oBtn=document.getElementsByTagName("input")[0];
+        function getRandom(n){
+            var a=Math.floor(Math.random()*n);
+            return a;
+        }
+         oBtn.onclick=function(){   
+            var food = ["番茄炒蛋","椒盐虾仁","鱼香肉丝","糖醋排骨"];
+            var str = getRandom(food.length);
+            document.write( food[str] );
+        }
+     
+</script>
+
+</body>
+</html>  -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <span>1</span>
+    </div>
+    <script>
+    var odiv=document.getElementsByTagName("div")[0];
+    console.log(odiv.childNodes[1].nodeType);
+    console.log(odiv.childNodes.length);
+    console.log(document.nodeType);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    p{
+        width: 30px;
+        height: 30px;
+        background-color: #ccc;
+
+    }
+    </style>
+</head>
+<body>
+   <div id="box">
+       <p></p>
+       <p></p>
+       <p></p>
+       <p></p>
+       <p id="xiaoming">xiaoming</p>
+       <p></p>
+   </div>
+
+   <script>
+    var oDiv=document.getElementById("box");
+    var xiaoming=document.getElementById("xiaoming");
+    function prevAll(obj){
+        var prev =obj;
+        var arr = [];
+        while(prev = prev.previousSibling){
+            if(prev.nodeType == 1){
+                arr.push(prev);
+            }
+        }
+        return arr;
+    }
+     var array = prevAll(xiaoming);
+            for( var i=0;i<array.length;i++){
+                array[i].style.backgroundColor="red";
+            }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .choose{
+        background-color: yellowgreen;
+    }
+    </style>
+</head>
+<body>
+   <div class="box" id="box">
+       <ul>
+           <li><input type="checkbox">吃饭</li>
+           <li><input type="checkbox">睡觉</li>
+           <li><input type="checkbox">打豆豆</li>
+       </ul>
+   </div>
+
+   <script>
+    var inputs = document.getElementsByTagName("input");
+    for(var i=0;i<inputs.length;i++){
+        inputs[i].onclick=function(){
+         this.parentNode.className = this.checked? "choose" : "";
+        }
+    }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box1">
+        <p class="xiaoming">我是小明</p>
+    </div>
+    <div id="box2"></div>
+    <script>
+        var xiaoming=document.getElementsByClassName("xiaoming")[0];
+        var box2=document.getElementById("box2");
+        box2.appendChild(xiaoming);
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <select name="" id="year"></select>
+    <script>
+      var year = document.getElementById("year");
+      for(var i=1950;i<=2017;i++){
+          year.innerHTML += "<option value=" +i+ ">" +i+"年" +"</option>";
+      }  
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>
+            吃饭
+            <a href="#">删除</a>
+        </li>
+        <li>
+            睡觉
+            <a href="#">删除</a>
+        </li>
+        <li>
+            打豆豆
+            <a href="#">删除</a></li>
+    </ul>
+        <script>
+    var oUl =document.getElementsByTagName("ul")[0];
+    var oAs =document.getElementsByTagName("a");
+    for(var i=0;i<oAs.length;i++){
+        oAs[i].onclick=function(){
+            oUl.removeChild(this.parentNode);
+        }
+    }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>小红</p>
+         <p id="op">小花</p>
+          <p>小黄</p>
+    </div>
+
+    <script>
+var oDiv=document.getElementsByTagName("div")[0];
+var op=document.getElementById("op");
+
+
+var op1 = document.createElement("p");
+op1.innerHTML ="老蒋";
+oDiv.replaceChild(op1,op);
+
+
+</script>
+</body>
+</html>

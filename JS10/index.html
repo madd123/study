@@ -1,0 +1,235 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         div{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: absolute;
+                top:50px;
+                left:100px;
+            }
+
+    </style>
+</head>
+<body>
+     <div class="oDiv1">div1</div>
+     <script type="text/javascript" src="tween.js"></script>
+     <script>
+        var oDiv1 = document.getElementsByTagName("div")[0];
+            var frameNumber = 0;
+
+               var timer = setInterval(function(){
+
+                frameNumber++;
+
+                    if( frameNumber == 150){
+                        clearInterval(timer);
+                    }
+
+                    oDiv1.style.left = Tween. BackEaseIn(frameNumber , 100 , 600 , 150) +"px";
+                    
+
+
+               },50);
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+   var arr="abcdef";
+//   alert(arr.charAt(3));
+   alert(arr[2]);
+    //结果: “good”
+    </script>
+</body>
+</html> -->
+
+
+
+ <!DOCTYPE html>
+<!-- <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       #btn1{
+           position: absolute;
+           left: 0;
+           top: 50px;
+       }
+       #btn2{
+           position: absolute;
+           left: 150px;
+           top: 50px;
+       }
+        </style>
+</head>
+<body>
+    <input type="text" value="1" id="in1">
+    <button id="btn1">左边</button>
+    <button id="btn2">右边</button>
+    <script>
+        var btn1=document.getElementById("btn1");
+        var btn2=document.getElementById("btn2");
+        var IN=document.getElementById("in1");
+     
+          
+               btn1.onclick=function(){
+                
+                 num--;
+                 if(num<0){
+                     num=0;
+                 }
+                IN.value=num;
+             }
+            
+      
+             var num=1;
+             btn2.onclick=function(){
+                
+                 num++;
+                 if(num>9){
+                     num=9;
+                 }
+                IN.value=num;
+             }
+          
+          
+
+           
+
+
+        </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    input{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 0;
+        float: left;
+        color: red;
+        background-color: yellow;
+    }
+    #cur1{
+         color: red;
+        background-color: yellow;
+    }
+    #btn1{
+        color: red;
+        background-color: yellow;
+    }
+    #btn2{
+        color: red;
+        background-color: yellow;
+    }
+    #box{
+        width: 300px;
+        height: 100px;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: orangered;
+    }
+    </style>
+</head>
+<body>
+     <input type="button" value="风景"  id="cur1" />
+        <input type="button" value="汽车" id="btn1" />
+        <input type="button" value="宠物"id="btn2"/>
+        <div id="box" style="color:blue;" >box1</div>
+        <script>
+                var bTn1=document.getElementById("btn1");
+             var bTn2=document.getElementById("btn2");
+              var Cs=document.getElementById("cur1");
+                var box=document.getElementById("box");
+            bTn1.onclick=function(){
+                bTn1.style.color="black";
+                bTn1.style.backgroundColor="pink";
+                 box.style.color="black";
+                box.style.backgroundColor="pink"
+            }
+            bTn2.onclick=function(){
+                bTn2.style.color="black";
+                bTn2.style.backgroundColor="pink";
+                 box.style.color="black";
+                box.style.backgroundColor="pink"
+            }
+            Cs.onclick=function(){
+               Cs.style.color="black";
+               Cs.style.backgroundColor="pink";
+                box.style.color="black";
+                box.style.backgroundColor="pink"
+            }
+
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+//     var arr=[3,2,1,6,9,4];
+// arr.splice(3,2,"a","b");
+// console.log(arr);
+        // function show(){
+        //     var a=0;
+        //     for(var i=0;i<arguments.length;i++){
+        //         a+=arguments[i];
+        //     }
+        //     alert(a);
+        // }
+        // show(3,5,7,45,65);
+        // var arr="abcdef";
+        // alert(arr.charAt(3));
+        // alert(arr[2]);
+        // function aaa(){
+        //     var a=1;
+        //     return function(){
+        //         a++;
+        //         alert(a);
+        //     }
+        // }
+        // var b=aaa();
+        // b();
+        // b();
+</script>
+</body>
+</html>

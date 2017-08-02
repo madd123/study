@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            div{
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                position: absolute;
+                top:50px;
+                left:100px;
+            }
+            .oDiv2{
+                top:160px;
+            }
+            .oDiv3{
+                top:320px;
+            }
+            .oDiv4{
+                top:480px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="oDiv1">div1</div>
+        <div class="oDiv2">div2</div>
+        <div class="oDiv3">div3</div>
+        <div class="oDiv4">div4</div>
+
+
+        <script type="text/javascript" src="tween.js"></script>
+        <script type="text/javascript">
+            var oDiv1 = document.getElementsByTagName("div")[0];
+            var oDiv2 = document.getElementsByTagName("div")[1];
+            var oDiv3 = document.getElementsByTagName("div")[2];
+            var oDiv4 = document.getElementsByTagName("div")[3];
+
+            // 第一个参数t表示当前帧编号
+            // 第二个参数b表示起始位置
+            // 第三个参数c表示变化量
+            // 第四个参数d表示总帧数
+            //    function linear(t , b , c , d){
+            //        return c * t / d + b;
+            //    }
+            //    function easeInOut(t,b,c,d){
+            //     if (t==0) return b;
+            //     if (t==d) return b+c;
+            //     if ((t/=d/2) < 1) return c/2 * Math.pow(2, 10 * (t - 1)) + b;
+            //     return c/2 * (-Math.pow(2, -10 * --t) + 2) + b;
+            // }
+            //  function fun(t,b,c,d,a,p){
+            //     if (t==0) return b;  if ((t/=d/2)==2) return b+c;  if (!p) p=d*(.3*1.5);
+            //     if (!a || a < Math.abs(c)) { a=c; var s=p/4; }
+            //     else var s = p/(2*Math.PI) * Math.asin (c/a);
+            //     if (t < 1) return -.5*(a*Math.pow(2,10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )) + b;
+            //     return a*Math.pow(2,-10*(t-=1)) * Math.sin( (t*d-s)*(2*Math.PI)/p )*.5 + c + b;
+            // }
+               // left  100px  -  700px   150次
+               // c * t / d + b;
+
+               // 600 /150 * 1 + 100  =104
+               // 600 /150 * 2 + 100  =108
+               // 600 /150 * 3 + 100  =112
+               // 600 /150 * 150 + 100  =700
+
+               //帧编号（信号量）
+               var frameNumber = 0;
+
+               var timer = setInterval(function(){
+
+                frameNumber++;
+
+                    if( frameNumber == 150){
+                        clearInterval(timer);
+                    }
+
+                    oDiv1.style.left = Tween.BounceEaseInOut(frameNumber , 100 , 600 , 150) +"px";
+                    oDiv2.style.left = Tween.BounceEaseIn(frameNumber , 100 , 600 , 150) +"px";
+                    oDiv3.style.left = Tween.BackEaseOut(frameNumber , 100 , 600 , 150) +"px";
+                    oDiv4.style.left = Tween.ElasticEaseOut(frameNumber , 100 , 600 , 150) +"px";
+
+
+               },50);
+
+        </script>
+    </body>
+</html>

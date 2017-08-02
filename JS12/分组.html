@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script type="text/javascript">
+
+            // var re = /ab(cd)\1\1e/;
+
+            // console.log(re.test("abcdcde"));  //f
+            // console.log(re.test("abcde"));  //f
+            // console.log(re.test("abcdcdcde"));  //t
+
+
+            // var re = /a(bc)d(ef)\2\1g/;
+            // var re = /abcdefefbcg/;  \2调用第二组 \1调用第一组
+
+            // console.log( re.test("abcdefefbcg"));
+
+
+            var str = "abcde";
+
+            // console.log( str.replace(/ab(cd)e/,"ab$1$1$1e"));
+            //
+
+            console.log( str.replace(/ab(cd)e/,function(match,$1){
+                console.log("第一个参数是"+match);
+                console.log("第二个参数是"+$1);
+
+                return "ab"+$1+$1+"e";  //abcdcde
+            }));
+            //
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
