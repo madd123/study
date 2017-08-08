@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <input type="text" />
+
+
+        <script type="text/javascript">
+            var txt = document.getElementsByTagName("input")[0];
+
+                txt.onkeydown = function(event){
+                    console.log("键码"+event.keyCode);
+                    txt.value = '';
+                }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <ul id="oUl">
+            <li>11111</li>
+            <li>22222</li>
+            <li>33333</li>
+            <li>44444</li>
+        </ul>
+
+        <script type="text/javascript">
+            // var oUl = document.getElementById("oUl");
+            // var oLis = oUl.getElementsByTagName("li");
+
+            // for( var i = 0;i<oLis.length;i++){
+            //     oLis[i].onclick=function(){
+            //         alert(123);
+            //     }
+
+            // }
+
+            // var oUl = document.getElementById("oUl");
+            // oUl.onclick=function(){
+            //     alert(123);
+            // }
+
+            var oUl = document.getElementById("oUl");
+            oUl.onclick=function(ev){
+                ev = ev || window.event;
+
+                var target = ev.target || ev.srcElement;
+
+                // alert(target.nodeName.toLowerCase());
+                if( target.nodeName.toLowerCase() == "li"){
+                    alert(target.innerHTML);
+                }
+
+            }
+        </script>
+    </body>
+</html>

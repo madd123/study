@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="box">
+            <input type="button" value="添加" id="add" />
+            <input type="button" value="删除" id="remove" />
+            <input type="button" value="移动" id="move" />
+            <input type="button" value="选择" id="select" />
+        </div>
+
+
+        <script type="text/javascript">
+            // var Add = document.getElementById("add");
+            // var Remove = document.getElementById("remove");
+            // var Move = document.getElementById("move");
+            // var Select = document.getElementById("select");
+
+            // Add.onclick=function(){
+            //     alert("添加");
+            // }
+            // Remove.onclick=function(){
+            //     alert("删除");
+            // }
+            // Move.onclick=function(){
+            //     alert("移动");
+            // }
+            // Select.onclick=function(){
+            //     alert("选择");
+            // }
+
+            var box = document.getElementById("box");
+
+            box.onclick=function(ev){
+                ev = ev || window.event;
+
+                var target = event.target || ev.srcElement;
+
+                if( target.nodeName.toLowerCase() == "input"){
+                    switch(target.id){
+                        case "add" :
+                            alert("添加");
+                            break;
+                        case "remove" :
+                            alert("删除");
+                            break;
+                        case "move" :
+                            alert("移动");
+                            break;
+                        case "select" :
+                            alert("选择");
+                            break;
+                    }
+                }
+
+
+            }
+        </script>
+    </body>
+</html>

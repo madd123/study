@@ -1,0 +1,227 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+            div{
+                width: 80px;
+                height: 108px;
+                background: url(img/girl.png) no-repeat;
+                background-position: 0 -223px;
+                position:absolute;
+                top:100px;
+                left:0;
+            }
+
+
+        </style>
+    </head>
+    <body>
+
+
+
+        <script type="text/javascript">
+            /*
+            定义小女孩的属性
+            DOM     div小女孩DOM
+            left    位置
+            top
+            timer   定时器
+            speed  速度
+            buzi   步子
+
+
+            方法（生命周期和普通方法）
+            init
+            行走
+            die
+             */
+
+             function Girl(top,left,speed){
+                //定义小女孩的属性
+                this.top = top;
+                this.left = left;
+                this.speed = speed;
+                this.timer = null;
+                this.buzi = 0;
+                this.dom = null;
+
+                //定义一个初始化方法
+                this.init = function(){
+
+                    //创建div，然后添加div
+                    this.dom = document.createElement("div");
+                    document.body.appendChild(this.dom);
+
+                    //设置样式
+                    this.dom.style.left = this.left + "px";
+                    this.dom.style.top = this.top + "px";
+                }
+
+                //设置方法
+                this.xingzou = function(){
+
+                    //要备份，因为进入setInterval之后this就是window
+                    var self = this;
+
+
+                    this.timer = setInterval(function(){
+                        self.left++;
+                        self.buzi++;
+                        // 范围
+                        if( self.buzi > 7 ){
+                            self.buzi = 0;
+                        }
+                        if( self.left > 1000 ){
+                            self.die();
+                        }
+                        self.dom.style.left = self.left + "px";
+                        self.dom.style.backgroundPositionX = -self.buzi*80 + "px";
+
+                    },this.speed)
+
+                }
+                this.die = function(){
+                    clearInterval(this.timer);
+                    document.body.removeChild(this.dom);
+                }
+
+                //调用初始化
+                this.init();
+                //直接调用行走
+                this.xingzou();
+             }
+
+             setInterval(function(){
+
+                new Girl(Math.random()*400,Math.random()*100,Math.random()*100);
+
+             },1000)
+        </script>
+    </body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style> 
+    *{
+        margin: 0;
+        padding: 0;
+    }    
+    #background{
+        width: 2560px;
+        height: 1600px;
+        background:url("./img/bg.jpg") no-repeat;
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+    #odiv{
+    width: 90px;
+    height: 122px;
+    background: url(img/ballon.png) no-repeat;
+    background-position: 0px -245px;
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="background"></div>
+    <div id="odiv"></div>
+     <script>
+    //   定义小女孩的属性
+    //         DOM     div小女孩DOM
+    //         left    位置
+    //         top
+    //         timer   定时器
+    //         speed  速度
+    //         buzi   步子
+
+
+    //         方法（生命周期和普通方法）
+    //         init
+    //         行走=fly
+    //         die=bomb
+     
+
+             function ballon(top,left,speed){
+                //定义小女孩的属性
+                this.top = top;
+                this.left = left;
+                this.speed = speed;
+                this.timer = null;
+                this.buzi = 0;
+                this.dom = null;
+
+                //定义一个初始化方法
+                this.init = function(){
+
+                    //创建div，然后添加div
+                  
+                    this.dom = document.createElement("div");
+                      this.dom.id="odiv";
+                       this.dom.style.backgroundPositionY =parseInt(Math.random()*3)*123 + "px";
+                        this.dom.style.backgroundPositionX = parseInt(Math.random()*4)*92 + "px";
+                    document.body.appendChild(this.dom);
+
+                    //设置样式
+                    this.dom.style.left = this.left + "px";
+                    this.dom.style.top = this.top + "px";
+                }
+
+                //设置方法
+                this.fly = function(){
+
+                    //要备份，因为进入setInterval之后this就是window
+                    var self = this;
+                    this.timer = setInterval(function(){
+                        self.top-=20;
+                        // self.left+=20;
+                        self.buzi=2;
+                        // 范围
+                      
+                        if( self.buzi >5){
+                            self.buzi = 0;
+                        }
+                        if( self.top<100 ){
+                            self.bomb();
+                        }
+                        self.dom.style.top = self.top + "px";
+                        self.dom.style.left = self.left + "px";
+                       
+                        console.log( self.dom.style.backgroundPositionY, self.dom.style.backgroundPositionX,self.dom.style.top);
+                    },this.speed)
+
+                }
+               this.bomb = function(){
+                    clearInterval(this.timer);
+                    document.body.removeChild(this.dom);
+                }
+
+                //调用初始化
+                this.init();
+                //直接调用行走
+                this.fly();
+             }
+
+            //  setInterval(function(){
+
+            new ballon(400,Math.random()*400,Math.random()*3000);   
+
+            //  },1000)
+
+    </script> 
+</body>
+</html>

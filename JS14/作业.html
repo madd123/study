@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style>
+        input{
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            color: greenyellow;
+            font-size: 50px;
+        }
+    </style>
+        <script type="text/javascript">
+            window.onload=function(){
+                var oBtn = document.getElementsByTagName("input")[0];
+
+                function getRandom(n){
+                    var a = Math.floor( Math.random()*n );
+
+                    return a;
+                }
+
+                
+                oBtn.onclick=function(){
+                  
+
+                    var name = ["马冬冬","周鹏","翁鹏辉","叶昶","李明"];
+
+                    var str =  getRandom( name.length);
+
+                    oBtn.value= name[str] ;
+                       oBtn.style.backgroundColor="orange";                     
+                        oBtn.style.color="red";
+                }
+             }
+        </script>
+    </head>
+    <body>
+        <input type="button" value="点名册" />
+    </body>
+         //点名器
+</html> 
+
+

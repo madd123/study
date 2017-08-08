@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.ballon{
+				width: 81px;
+				height: 119px;
+				background: url(img/ballon.png) no-repeat;
+				position: absolute;
+				cursor:crosshair;
+			}
+			html{
+				height: 100%;
+			}
+			body{
+				background: url("./img/bg.jpg") no-repeat;
+				/* width: 1366px; */
+				height:100%;	
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			//应该封装一个构造函数
+			function Ballon(){
+				this.top = 600;  //出现的高度
+				this.left = parseInt(Math.random()*1200);  //出现的左右位置
+				this.score = parseInt(Math.random()*7)+1;  //气球分值
+				this.timer = null;
+				
+				this.init();
+				this.fly();
+			}
+			
+			
+			//初始化
+			Ballon.prototype.init = function(){
+				//创建DOM
+				this.dom = document.createElement("div");
+				
+				//更改类名
+				this.dom.className = "ballon";
+				
+//				追加这个元素,到body里面
+				document.body.appendChild(this.dom);
+				
+//				设置样式
+				this.dom.style.left = this.left + "px";
+				this.dom.style.top = this.top + "px";
+				
+				//设置背景定位，背景定位要根据自己分数来设置
+//				精灵图有bug,分数和自己真实的图差了1
+				var x = -(this.score-1) % 4 * 96;
+				var y =  -parseInt((this.score-1) / 4) * 120;
+				
+				this.dom.style.backgroundPosition = x + "px " + y +"px";
+				
+				var self = this;
+//				绑定监听
+				this.dom.onclick = function(){
+					self.bomb();
+					
+					
+				}
+			}
+			Ballon.prototype.fly = function(){
+//				备份自己的this
+				var self = this;
+				
+				this.timer = setInterval(function(){
+					
+					self.top -= 2 * self.score;
+					
+					//范围
+					if( self.top < -100){
+						self.bomb();
+					}
+					
+					
+					self.dom.style.top = self.top + "px";
+				},20)
+				
+				
+				
+			}
+			//爆炸方法
+			Ballon.prototype.bomb = function(){
+				
+				clearInterval(this.timer);
+				//移出DOM
+				document.body.removeChild(this.dom);
+			}
+			setInterval(function(){
+
+				new Ballon();
+			},500
+			
+			)
+			
+		</script>
+	</body>
+</html>
