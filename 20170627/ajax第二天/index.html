@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="js/underscore.js" type="text/javascript" charset="utf-8"></script>
+<script>	
+	var str = "我的学号是<%=xuehao%>，我叫<%=xingming%>，我今年<%=nianling%>,我的性别是<%=xingbie%>";
+	var compile =_.template(str);
+	var dictionary={
+			"xuehao" : 20160001,
+			"xingming" : "小明",
+			"nianling" : 22,
+			"xingbie" : "男"
+	}
+	console.log(compile(dictionary));
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+	

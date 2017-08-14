@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style> 
+        *{
+            margin: 0;padding: 0;
+        }
+    div{
+       width: 140px;
+    height: 205px;
+    background: url(./00.jpg) no-repeat;
+    background-size: 130px 130px;
+    float: left;
+    }
+    </style>
+    </head>
+    <body>
+     <div>  </div>
+        <h1>登录</h1>
+        <form action="" name="f1">
+            <p>账号：<input type="text" id="un" placeholder="请输入账号" /></p>
+            <p><input type="text" id="reset" placeholder="输入的是一个账号!请继续操作" style="width:200px; display:none;z-index:3"></p>
+             <p>密码：<input type="password" id="up" placeholder="请输入密码" /></p>
+             <p><input type="text" id="reset1" placeholder="输入的是一个密码！请继续操作" style=" width:200px;display:none;z-index:3"></p>
+            <p>重复密码：<input type="password" id="up1" placeholder="请再次输入密码" /></p> 
+            <p><input type="reset" /><input type="button" id="btn" value="登陆" /></p>
+        </form>
+
+        <script type="text/javascript">
+            var btn = document.getElementById("btn");
+            var Reset=document.getElementById("reset");
+            var Reset1=document.getElementById("reset1");
+             var re =/^[a-zA-Z][a-zA-Z0-9_]{4,15}$/;
+             var re2=/^[a-zA-Z]\w{5,17}$/;
+            btn.onclick = function(){
+                if(re.test(un.value)){
+                    Reset.style.display="block";
+                }else{
+                  
+                }  
+                 if(re2.test(up.value)){
+                   Reset1.style.display="block";
+                }else{
+                  
+                } 
+                if(f1.up.value==f1.up1.value&&f1.up.value){
+                     f1.submit();
+                     alert("登陆成功");
+                } else{
+                //    alert("密码不一致，请重新输入！");
+              }
+            }
+          
+           
+
+
+        </script>
+    </body>
+</html>

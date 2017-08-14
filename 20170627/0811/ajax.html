@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="button" id="btn" value="点我读取文件" />
+		
+		<script type="text/javascript">
+			var btn = document.getElementById("btn");
+			
+			btn.onclick=function(){
+				//创建实例
+				var xhr = new XMLHttpRequest();
+				//监听就绪的状态
+				xhr.onreadystatechange = function(){
+					//判断是否就绪
+					if( xhr.readyState == 4){
+						console.log( xhr.responseText );
+					}
+				}
+				//创建请求  第三个参数，切换同步和异步 
+				xhr.open("get","php/a.txt",true);
+				//发送请求
+				xhr.send(null);
+				
+				
+				console.log("嘻嘻嘻嘻嘻嘻");
+				console.log("嘻嘻嘻嘻嘻嘻");
+				console.log("嘻嘻嘻嘻嘻嘻");
+				
+			}
+			
+			
+			
+		</script>
+	</body>
+</html>

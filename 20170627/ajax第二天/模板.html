@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			
+			var str = "周六很多人去了@difang@,天气是@tianqi@，获得了@shouhuo@。";
+			
+			//字典，数据
+			var dictionary = {
+				"difang" : "朝阳",
+				"tianqi" : "大雨",
+				"shouhuo" : "一本书和一些感想"
+			}
+			
+			//数据绑定
+			str = str.replace(/\@([a-z]+)\@/g , function(match,$1,index,string){
+				console.log("match是"+match);
+				console.log("$1是"+$1);
+				console.log("index是"+index);
+				console.log("string是"+string);
+				return dictionary[$1];
+			});
+	
+		 	console.log(str);
+
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
