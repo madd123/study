@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/underscore.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			var str = "周六很多人去了<%=difang%>,天气是<%=tianqi%>，获得了<%=shouhuo%>。";
+			
+			var compile = _.template(str);
+			
+			//字典，数据
+			var dictionary = {
+				"difang" : "朝阳",
+				"tianqi" : "大雨",
+				"shouhuo" : "一本书和一些感想"
+			}
+			
+			
+	
+		 	console.log( compile(dictionary) );
+
+			// shuffle函数，返回一个随机乱序的 list 副本
+//			var arr = [1,2,3,4,5,6,7,8,9];
+//			var arr2 = _.shuffle(arr);
+//			console.log(arr2);
+//			
+//			var arr = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+//			var arr2 = _.sample(arr,6);
+//			console.log(arr2);
+//
+//			var arr = [
+//				{"xingming":"小明","age":12,"sex":"男"},
+//				{"xingming":"小红","age":18,"sex":"女"},
+//				{"xingming":"小绿","age":2,"sex":"女"},
+//				{"xingming":"小刚","age":2,"sex":"男"},
+//				{"xingming":"小灰","age":12,"sex":"男"}
+//			];
+//			
+//			var result = _.filter(arr,function(item){
+//				console.log(item);
+//				return item.age > 10;
+//			});
+//			
+//			console.log(result);
+
+		</script>

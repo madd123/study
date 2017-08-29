@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			img{
+				width: 300px;
+				height: 300px;
+			}
+		</style>
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="jquery-picAutoChange.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			//页面加载完毕调用一个插件方法，使得图片依次播放
+			$(function(){
+				
+				$.picAutoChange();
+				
+			})
+			
+			
+		</script>
+	</head>
+	<body>
+		<img src="images/0.jpg" alt="" />
+	</body>
+</html>

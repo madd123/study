@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="box"></div>
+		<input type="button" id="btn" value="点我" />
+		
+		
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$("input").click(function(){
+				
+				$.get("http://h6.duchengjiu.top/shop/api_cat.php",function(data){
+//					var a = data;
+//					$("#box").html(a);
+					console.log(data);
+				})
+				
+			})
+			
+			
+			
+			
+		</script>
+	</body>
+</html>

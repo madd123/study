@@ -1,0 +1,60 @@
+{
+    "workbench.editor.showTabs": true,
+    
+      // 控制编辑器的选项卡关闭按钮的位置，或当设置为 "off" 时禁用关闭它们。
+      "workbench.editor.tabCloseButton": "right",
+    
+      // 控制打开的编辑器是否随图标一起显示。这还需启用图标主题。
+      "workbench.editor.showIcons": true,
+    
+      // 控制打开的编辑器是否显示为预览。预览编辑器可以重新使用，直到将其保留(例如，双击或编辑)。
+      "workbench.editor.enablePreview": true,
+    
+      // 控制 Quick Open 中打开的编辑器是否显示为预览。预览编辑器可以重新使用，直到将其保留(例如，通过双击或编辑)。
+      "workbench.editor.enablePreviewFromQuickOpen": true,
+    
+      // 控制打开编辑器的位置。选择“左侧”或“右侧”以在当前活动位置的左侧或右侧打开编辑器。选择“第一个”或“最后一个”以从当前活动位置独立打开编辑器。
+      "workbench.editor.openPositioning": "right",
+    
+      // 控制打开时编辑器是否显示在任何可见组中。如果禁用，编辑器会优先在当前活动编辑器组中打开。如果启用，会显示已打开的编辑器而不是在当前活动编辑器组中再次打开。请注意，有些情况下会忽略此设置，例如强制编辑器在特定组中或在当前活动组的边侧打开时。
+      "workbench.editor.revealIfOpen": false,
+    
+      // 控制命令面板中保留最近使用命令的数量。设置为 0 则禁用命令历史记录。
+      "workbench.commandPalette.history": 50,
+    
+      // 控制是否在再次打开命令面板时恢复上一次的输入内容。
+      "workbench.commandPalette.preserveInput": false,
+    
+      // 控制 Quick Open 是否应在失去焦点时自动关闭。
+      "workbench.quickOpen.closeOnFocusLost": true,
+    
+      // 控制打开设置时是否打开显示所有默认设置的编辑器。
+      "workbench.settings.openDefaultSettings": true,
+    
+      // 控制边栏的位置。它可显示在工作台的左侧或右侧。
+      "workbench.sideBar.location": "left",
+    
+      // 控制工作台底部状态栏的可见性。
+      "workbench.statusBar.visible": true,
+    
+      // 控制工作台中活动栏的可见性。
+      "workbench.activityBar.visible": true,
+    
+      // 控制文件被其他某些进程删除或重命名时是否应该自动关闭显示文件的编辑器。禁用此项会保持编辑器作为此类事件的脏文件打开。请注意，从应用程序内部进行删除操作会始终关闭编辑器，并且脏文件始终不会关闭以保存数据。
+      "workbench.editor.closeOnFileDelete": true,
+    
+      // 启用后，当没有打开编辑器时将显示水印提示。
+      "workbench.tips.enabled": true,
+    
+      // 在未能恢复上一会话信息的情况下，控制启动时显示的编辑器。选择 "none" 表示启动时不打开编辑器，"welcomePage" 表示打开欢迎页面(默认)，"newUntitledFile" 表示打开新的无标题文档(仅打开一个空工作区)。
+      "workbench.startupEditor": "welcomePage",
+    
+      // 指定工作台中使用的颜色主题。
+    "workbench.colorTheme": "Red",
+    
+      // 指定在工作台中使用的图标主题，或指定 "null" 以不显示任何文件图标。
+      "workbench.iconTheme": "vscode-great-icons",
+    
+      // 覆盖当前所选颜色主题的颜色。
+      "workbench.colorCustomizations": {}
+}

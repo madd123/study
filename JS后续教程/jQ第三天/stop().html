@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width: 80px;
+				height: 80px;
+				background: orange;
+				position: absolute;
+				left:100px;
+				top:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" value="stop()"/>
+		<input type="button" value="stop(true)"/>
+		<input type="button" value="stop(true,true)"/>
+		<input type="button" value="stop(false,true)"/>
+		<input type="button" value="finish()"/>
+		
+		<div></div>
+		
+		<script src="js/jquery-1.12.3.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$("div").animate({"left":800},2000);
+			$("div").animate({"top":400},2000);
+			$("div").animate({"left":100},2000);
+//			$("div").animate({"top":100},2000);
+			
+			$("input:eq(0)").click(function(){
+				$("div").stop();
+			})
+			
+			$("input:eq(1)").click(function(){
+				$("div").stop(true);
+			})
+			
+			$("input:eq(2)").click(function(){
+				$("div").stop(true,true);
+			})
+			
+			$("input:eq(3)").click(function(){
+				$("div").stop(false,true);
+			})
+			
+			$("input:eq(4)").click(function(){
+				$("div").finish();
+			})
+		</script>
+	</body>
+</html>
